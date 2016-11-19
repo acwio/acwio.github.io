@@ -1,0 +1,101 @@
+---
+layout: default
+---
+<div id="container">
+        <div id="header">
+            <hgroup>
+                <div class="portrait">
+                    <img id="portrait" src="img/portrait3.png" alt="Alex C. Williams" />
+                </div>
+                <h4 style="color: #EA9E22;padding-left: 18px; font-weight: 600;">Alex C. Williams</h4>
+                <br/><a href="https://cs.uwaterloo.ca/">School of Computer Science</a><br/><a href="http://www.uwaterloo.ca">University of Waterloo</a>
+            </hgroup>
+            <div id="contact">
+                <a href="mailto:Alex.Williams@uwaterloo.ca">Alex.Williams@uwaterloo.ca</a> |
+                <a class="resume" href="cv.pdf">CV</a>
+                <!--<ul>
+                    <li id="facebook"><a href="https://www.twitter.com/joyokim"><img src="images/twitter.png" alt="My Facebook profile" /></a></li>
+                    <li id="linkedin"><a href="http://www.linkedin.com/pub/joy-kim/33/6b3/76b"><img src="images/linkedin.png" alt="My LinkedIn profile" /></a></li>
+                </ul>-->
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="about" class='page-url-dest'>
+                <hgroup>
+                    <h3>Bio</h3>
+                </hgroup>
+                <p>
+                    I am a PhD student in the David R. Cheriton School of Computer Science at the University of Waterloo where I am supervised by <a href="http://www.edithlaw.ca"> Edith Law</a> and am a member of the <a href="http://hci.uwaterloo.ca">Human-Computer Interaction Lab</a>. I earned both my MS and BS in Computer Science from <a href="http://www.mtsu.edu">Middle
+                    Tennessee State Univeristy</a>
+                </p>
+                <p>
+                    My research interests are at the intersection of curiosity, citizen science, and pedagogical agents. My current research consolidates questions from each of these areas to better understand how we can get volunteers and crowd-workers more excited about and involved in participating in crowd-scale scientific research. 
+                </p>
+                <p>
+                    When possible, I try to leverage computing to disciplines that study ancient history. Before joining
+                    Waterloo, I was a research scientist in the Faculty of Classics at the <a href="http://www.ox.ac.uk">University of Oxford</a> where I worked on <a href="http://www.ancientlives.org">Ancient Lives</a>,
+                    <a href="http://www.proteusproject.uk">Proteus</a>, and Greek-BLAST.
+                </p>
+            </div>
+
+            <div id="research" class='page-url-dest' style="display: none;">
+                    <h3>Research Focus</h3>
+                <div class="project">
+                    <div class="project-title">
+                        Curiosity, Citizen Science, and Pedagogical Agents
+                    </div>
+                    <div class="project-desc">
+                        My current research focuses on the intersection of curiosity, citizen science, and pedagogical agents. The theme of my research centers around how curiosity can be leveraged and exploited to make learners (i.e. volunteers or crowd-workers) more excited and engaged with scientific crowdsourcing tasks. 
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">
+                        Experimental Human-in-the-Loop Systems
+                    </div>
+                    <div class="project-desc">
+                        My research centers around building systems that integrate human input as a computational units. Building hyrbid human-machine systems that perform complex tasks better than either human or machine could independently is non-trivial. This area of work is exploratory and open-ended.
+                    </div>
+                </div>
+
+                <h3>Publications</h3>
+                {% for research in site.data.research.pubs %}
+                <div class="project">
+                    <div class="project-title">
+                        {{ research.name }}
+                    </div>
+                    <div class="project-desc">
+                        {{ research.description }}
+                    </div>
+                    <br>
+                    <p>
+                        {% if research.thesis%}
+                        <a class="thesis">Thesis</a>
+                        {% endif %}
+                        {% if research.pdf %}
+                        <a class="file" href="{{ research.pdf}}">PDF</a>
+                        {% endif %}
+                    </p>
+                    <blockquote><p>
+                        {{ research.citation }}
+                    </p></blockquote>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div id="personal" class='page-url-dest' style="display: none;">
+                <h3>Personal</h3>
+                <p>
+                    In my free time, I play classical guitar. A few of my favorite musicians that draw inspiration from
+                    the classical guitar literature are <a href="https://www.youtube.com/watch?v=wLjG8L4nnh4">Django Reinhardt</a>,
+                    <a href="https://www.youtube.com/watch?v=6f3pHYwL9kY">Plini</a>, and
+                    <a href="https://www.youtube.com/watch?v=0ipv_l7KoSI">Intervals</a>.
+                </p>
+                <p>
+                    When I lived in England, I became a Baron of the principality of <a href="http://www.sealandgov.org/">Sealand</a>.
+                </p>
+            </div>
+
+        </div>
+</div>
