@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://toopay.github.io/bootstrap-markdown/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Bootstrap-markdown : Bootstrap plugin for markdown editing">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./Bootstrap Markdown_files/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./Bootstrap Markdown_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./Bootstrap Markdown_files/bootstrap-markdown.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="shortcut icon" href="http://toopay.github.io/bootstrap-markdown/img/favicon.png">
+
+    <title>Bootstrap Markdown</title>
+  <link rel="stylesheet" type="text/css" href="./Bootstrap Markdown_files/prettify.css"></head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/toopay/bootstrap-markdown">View on GitHub</a>
+
+          <h1 id="project_title">Bootstrap Markdown</h1>
+          <h2 id="project_tagline">Markdown editing meet Bootstrap</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/toopay/bootstrap-markdown/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/toopay/bootstrap-markdown/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>Simple Markdown editing tools that works!</h2>
+        <p><strong>Bootstrap-Markdown</strong> designed to be easily integrated with your bootstrap project. It exposes useful API that allow you to fully hook-in into the plugin</p>
+
+        <hr>
+
+        <h1>Markup</h1>
+        <p>Switch regular textarea within your form into <strong>Bootstrap-Markdown</strong> editor seamlessly by adding <code class="prettyprint prettyprinted"><span class="pln">data</span><span class="pun">-</span><span class="pln">provide</span><span class="pun">=</span><span class="str">"markdown"</span></code> attribute</p>
+
+        <!-- MARKUP-TEXTAREA -->
+        <div class="well">
+          <h5>Code</h5>
+          <pre class="prettyprint prettyprinted"><span class="tag">&lt;form&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"title"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"Title?"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;textarea</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"content"</span><span class="pln"> </span><span class="atn">data-provide</span><span class="pun">=</span><span class="atv">"markdown"</span><span class="pln"> </span><span class="atn">rows</span><span class="pun">=</span><span class="atv">"10"</span><span class="tag">&gt;&lt;/textarea&gt;</span><span class="pln">
+    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"publish"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span><span class="pln"> Publish
+    </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+    </span><span class="tag">&lt;hr/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Submit</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/form&gt;</span><span class="pln"> </span></pre>
+        </div>
+
+        <div class="well">
+          <h5>Result</h5>
+          <form>
+              <div class="form-group">
+                <input class="form-control" name="title" type="text" placeholder="Title?">
+              </div>
+              <div class="md-editor" id="1410189205970"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div></div><textarea name="content" data-provide="markdown" rows="15" class="md-input" style="resize: none; display: block;">### Hello there
+How are you?
+
+I have bellow task for you :
+
+Select from this text...
+Click the bold on THIS WORD and make THESE ONE italic
+Link GOOGLE to google.com
+Test to insert image (and try to tab after write the image description)
+Test Preview
+And ending here... Click "List"
+
+Enjoy!</textarea></div>
+              <label class="checkbox">
+                <input name="publish" type="checkbox"> Publish
+              </label>
+              <hr>
+              <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+
+        <p>Inline editing with <strong>Bootstrap-Markdown</strong> is done by adding <code class="prettyprint prettyprinted"><span class="pln">data</span><span class="pun">-</span><span class="pln">provide</span><span class="pun">=</span><span class="str">"markdown-editable"</span></code> attribute</p>
+
+        <!-- MARKUP-EDITABLE -->
+        <div class="well">
+          <h5>Code</h5>
+          <pre class="prettyprint prettyprinted"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">data-provide</span><span class="pun">=</span><span class="atv">"markdown-editable"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;h3&gt;</span><span class="pln">This is some editable heading</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+          </span><span class="tag">&lt;p&gt;</span><span class="pln">Well, actually all contents within this "markdown-editable" context is really editable. Just click anywhere!</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></pre>
+        </div>
+
+        <div class="well">
+          <h5>Result</h5>
+          <div data-provide="markdown-editable">
+          <h3>This is some editable heading</h3>
+          <p>Well, actually all contents within this "markdown-editable" context is really editable. Just click anywhere!</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h1>Usage</h1>
+        <p>Beside using above data-attributes, you could call it via code</p>
+        <pre class="prettyprint prettyprinted"><span class="pln">$</span><span class="pun">(</span><span class="str">"#some-textarea"</span><span class="pun">).</span><span class="pln">markdown</span><span class="pun">({</span><span class="pln">autofocus</span><span class="pun">:</span><span class="kwd">false</span><span class="pun">,</span><span class="pln">savable</span><span class="pun">:</span><span class="kwd">false</span><span class="pun">})</span></pre>
+        <p>Noted that <strong>Bootstrap-Markdown</strong> could be used as a standalone input (without any form). Set <code>savable</code> parameter to <code>true</code> will do the job. Options can be passed via data attributes or via code. Available options are:</p>
+
+        <table class="table table-bordered table-striped">
+          <colgroup>
+            <col class="span1">
+            <col class="span7">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Option Name</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>autofocus</code>
+              </td>
+              <td><code>boolean</code></td>
+              <td>Indicates that editor will focused after instantiated. Default to <code>false</code></td>
+            </tr>
+            <tr>
+              <td>
+                <code>savable</code>
+              </td>
+              <td><code>boolean</code></td>
+              <td>Indicates that editor will have save button and action. Default to <code>false</code></td>
+            </tr>
+            <tr>
+              <td>
+                <code>hideable</code>
+              </td>
+              <td><code>boolean</code></td>
+              <td>If set to <code>true</code> then the editor will be hidden on <code>blur</code> event. Default to <code>false</code></td>
+            </tr>
+            <tr>
+              <td>
+                <code>width</code>
+              </td>
+              <td><code>mixed</code></td>
+              <td>The editor width. Default to <code>inherit</code>. You could supply any numerical value (that will be set as css), or supply valid Bootstrap class (something like <code>span2</code>)</td>
+            </tr>
+            <tr>
+              <td>
+                <code>height</code>
+              </td>
+              <td><code>mixed</code></td>
+              <td>The editor height. Default to <code>inherit</code></td>
+            </tr>
+            <tr>
+              <td>
+                <code>resize</code>
+              </td>
+              <td><code>string</code></td>
+              <td>Option to disable or change the resize property, possible values <code>none</code>,<code>both</code>,<code>horizontal</code>,<code>vertical</code>. Default <code>none</code><br>
+                  If this option is enabled, the user will be able to resize the editor and preview screen.<br><br>
+                  <div class="alert alert-warning">
+                    <strong>Browser support</strong>
+                    <p>This is currently only supported on limited browsers. See <a href="http://caniuse.com/css-resize" target="_blank">Can you run it: Resize</a> for all supported browsers</p>
+                  </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>iconlibrary</code>
+              </td>
+              <td><code>string</code></td>
+              <td>The icon library to use. Glyphicons (<code>glyph</code>) and Font Awesome (<code>fa</code>) are supported. In order to use Font Awesome properly, you'll need to <a href="http://fontawesome.io/get-started/">include Font Awesome stylesheet</a> yourself. Default to <code>glyph</code></td>
+            </tr>
+            <tr>
+              <td>
+                <code>language</code>
+              </td>
+              <td><code>string</code></td>
+              <td>Localization setting. Default to <code>en</code></td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>footer</code>
+              </td>
+              <td><code>mixed</code></td>
+              <td>Footer dom. Can be string or callback. Default is empty string</td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>hiddenButtons</code>
+              </td>
+              <td><code>mixed</code></td>
+              <td>Array or string of button names to be hidden. Default is empty string</td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>disabledButtons</code>
+              </td>
+              <td><code>mixed</code></td>
+              <td>Array or string of button names to be disabled. Default is empty string</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="well">
+          <h5>Some examples</h5>
+          <hr>
+          <p>Custom width using <code>data-width="400"</code> attribute</p>
+          <div class="md-editor" id="1410189205999" style="display: table;"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div></div><textarea data-provide="markdown" data-width="400" class="md-input" rows="5" style="width: 400px; resize: none;"></textarea></div><br>
+          <hr>
+          <p>Hidden buttons using <code>data-hidden-buttons="cmdBold"</code> attribute</p>
+          <div class="md-editor" id="1410189206003"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm hidden" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div></div><textarea data-provide="markdown" data-hidden-buttons="cmdBold" class="md-input" rows="5" style="resize: none;"></textarea></div><br>
+          <hr>
+          <p>Hideable on blur using <code>data-hideable="true"</code> attribute</p>
+          <div class="md-editor" id="1410189206007"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div></div><textarea data-provide="markdown" data-hideable="true" class="md-input" rows="5" style="resize: none;"></textarea></div>
+          <hr>
+          <p>Savable using <code>data-savable="true"</code> attribute</p>
+          <div class="md-editor" id="1410189206011"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div></div><textarea data-provide="markdown" data-savable="true" class="md-input" rows="5" style="resize: none;"></textarea><div class="md-footer"><button class="btn btn-success" data-provider="bootstrap-markdown" data-handler="cmdSave"><i class="icon icon-white icon-ok"></i> Save</button></div></div>
+          <hr>
+
+          <p>Select Font Awesome icons instead of Glyphicons (requires <a href="http://fontawesome.io/get-started/">Font Awesome stylesheet</a>) using <code>data-iconlibrary="fa"</code></p>
+          <div class="md-editor" id="1410189206015"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="fa fa-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="fa fa-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="fa fa-font"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="fa fa-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="fa fa-picture-o"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="fa fa-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="fa fa-list-ol"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="fa fa-code"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="fa fa-quote-left"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="fa fa-search"></span> Preview</button></div></div><textarea data-provide="markdown" data-iconlibrary="fa" class="md-input" rows="5" style="resize: none;"></textarea></div>
+          <hr>
+        </div>
+
+        <h3>Events/Hook</h3>
+        <p>There are six main events within <strong>Bootstrap-Markdown</strong> lifecycle : <code>onShow</code>, <code>onPreview</code>, <code>onChange</code>, <code>onSave</code>, <code>onFocus</code> and <code>onBlur</code>. Heres an example to hook into those events via code:</p>
+
+        <div class="well">
+        <h5>Code</h5>
+        <pre class="prettyprint prettyprinted"><span class="pln">$</span><span class="pun">(</span><span class="str">"#target-editor"</span><span class="pun">).</span><span class="pln">markdown</span><span class="pun">({</span><span class="pln">
+  savable</span><span class="pun">:</span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+  onShow</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">){</span><span class="pln">
+    alert</span><span class="pun">(</span><span class="str">"Showing "</span><span class="pln">
+      </span><span class="pun">+</span><span class="pln">e</span><span class="pun">.</span><span class="pln">$textarea</span><span class="pun">.</span><span class="pln">prop</span><span class="pun">(</span><span class="str">"tagName"</span><span class="pun">).</span><span class="pln">toLowerCase</span><span class="pun">()</span><span class="pln">
+      </span><span class="pun">+</span><span class="str">"#"</span><span class="pln">
+      </span><span class="pun">+</span><span class="pln">e</span><span class="pun">.</span><span class="pln">$textarea</span><span class="pun">.</span><span class="pln">attr</span><span class="pun">(</span><span class="str">"id"</span><span class="pun">)</span><span class="pln">
+      </span><span class="pun">+</span><span class="str">" as Markdown Editor..."</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  onPreview</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> previewContent
+
+    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">e</span><span class="pun">.</span><span class="pln">isDirty</span><span class="pun">())</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">var</span><span class="pln"> originalContent </span><span class="pun">=</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">getContent</span><span class="pun">()</span><span class="pln">
+
+      previewContent </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Prepended text here..."</span><span class="pln">
+             </span><span class="pun">+</span><span class="pln"> </span><span class="str">"\n"</span><span class="pln">
+             </span><span class="pun">+</span><span class="pln"> originalContent
+             </span><span class="pun">+</span><span class="pln"> </span><span class="str">"\n"</span><span class="pln">
+             </span><span class="pun">+</span><span class="str">"Apended text here..."</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      previewContent </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Default content"</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> previewContent
+  </span><span class="pun">},</span><span class="pln">
+  onSave</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    alert</span><span class="pun">(</span><span class="str">"Saving '"</span><span class="pun">+</span><span class="pln">e</span><span class="pun">.</span><span class="pln">getContent</span><span class="pun">()+</span><span class="str">"'..."</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  onChange</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">){</span><span class="pln">
+    console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"Changed!"</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  onFocus</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    alert</span><span class="pun">(</span><span class="str">"Focus triggered!"</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">},</span><span class="pln">
+  onBlur</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    alert</span><span class="pun">(</span><span class="str">"Blur triggered!"</span><span class="pun">)</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">})</span></pre>
+        </div>
+
+        <div class="well">
+        <h5>Result</h5>
+          <textarea id="target-editor"></textarea>
+          <br>
+          <button id="editor-triger-init" class="btn btn-primary">Transform into Bootstrap-Markdown</button>
+        </div>
+
+        <h3>Editor Panel</h3>
+        <p><strong>Bootstrap-Markdown</strong> panel could be easily extended to suit your own specific needs. You can just set <code>additionalButtons</code> param, with your own buttons group. Heres an example to add button group into editor panel</p>
+
+        <div class="well">
+        <h5>Code</h5>
+        <pre class="prettyprint prettyprinted"><span class="pln">$</span><span class="pun">(</span><span class="str">"#target-editor-with-custom-buttons"</span><span class="pun">).</span><span class="pln">markdown</span><span class="pun">({</span><span class="pln">
+  additionalButtons</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+    </span><span class="pun">[{</span><span class="pln">
+          name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"groupCustom"</span><span class="pun">,</span><span class="pln">
+          data</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[{</span><span class="pln">
+            name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"cmdBeer"</span><span class="pun">,</span><span class="pln">
+            toggle</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> </span><span class="com">// this param only take effect if you load bootstrap.js</span><span class="pln">
+            title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Beer"</span><span class="pun">,</span><span class="pln">
+            icon</span><span class="pun">:</span><span class="pln"> </span><span class="str">"glyphicon glyphicon-glass"</span><span class="pun">,</span><span class="pln">
+            callback</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">e</span><span class="pun">){</span><span class="pln">
+              </span><span class="com">// Replace selection with some drinks</span><span class="pln">
+              </span><span class="kwd">var</span><span class="pln"> chunk</span><span class="pun">,</span><span class="pln"> cursor</span><span class="pun">,</span><span class="pln">
+                  selected </span><span class="pun">=</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">getSelection</span><span class="pun">(),</span><span class="pln"> content </span><span class="pun">=</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">getContent</span><span class="pun">(),</span><span class="pln">
+                  drinks </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">"Heinekken"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Budweiser"</span><span class="pun">,</span><span class="pln">
+                            </span><span class="str">"Iron City"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Amstel Light"</span><span class="pun">,</span><span class="pln">
+                            </span><span class="str">"Red Stripe"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Smithwicks"</span><span class="pun">,</span><span class="pln">
+                            </span><span class="str">"Westvleteren"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Sierra Nevada"</span><span class="pun">,</span><span class="pln">
+                            </span><span class="str">"Guinness"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Corona"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Calsberg"</span><span class="pun">],</span><span class="pln">
+                  index </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Math</span><span class="pun">.</span><span class="pln">floor</span><span class="pun">((</span><span class="typ">Math</span><span class="pun">.</span><span class="pln">random</span><span class="pun">()*</span><span class="lit">10</span><span class="pun">)+</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+
+
+              </span><span class="com">// Give random drink</span><span class="pln">
+              chunk </span><span class="pun">=</span><span class="pln"> drinks</span><span class="pun">[</span><span class="pln">index</span><span class="pun">]</span><span class="pln">
+
+              </span><span class="com">// transform selection and set the cursor into chunked text</span><span class="pln">
+              e</span><span class="pun">.</span><span class="pln">replaceSelection</span><span class="pun">(</span><span class="pln">chunk</span><span class="pun">)</span><span class="pln">
+              cursor </span><span class="pun">=</span><span class="pln"> selected</span><span class="pun">.</span><span class="pln">start
+
+              </span><span class="com">// Set the cursor</span><span class="pln">
+              e</span><span class="pun">.</span><span class="pln">setSelection</span><span class="pun">(</span><span class="pln">cursor</span><span class="pun">,</span><span class="pln">cursor</span><span class="pun">+</span><span class="pln">chunk</span><span class="pun">.</span><span class="pln">length</span><span class="pun">)</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+          </span><span class="pun">}]</span><span class="pln">
+    </span><span class="pun">}]</span><span class="pln">
+  </span><span class="pun">]</span><span class="pln">
+</span><span class="pun">})</span></pre></div>
+
+        <div class="well">
+        <h5>Result</h5>
+          <div class="md-editor" id="1410189206021"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Beer" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBeer" data-hotkey=""><span class="glyphicon glyphicon-glass"></span> </button></div></div><textarea id="target-editor-with-custom-buttons" class="md-input" rows="5" style="resize: none;"></textarea></div>
+        </div>
+
+        <p>With robust options and hooks available, you can also tweak the editor to fully suit with your needs. Here is an example to create a twitter input, markdown way...</p>
+
+        <div class="well">
+        <h5>Result</h5>
+          <div class="md-editor" id="1410189206026"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Bold (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italic (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Heading (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="URL/Link (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm hidden" title="Preview (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Preview</button></div></div><textarea id="target-editor-twitter" class="md-input" rows="5" style="resize: none;"></textarea><div class="md-footer"><div id="twitter-footer" class="well" style="display:none;"></div><small id="twitter-counter" class="text-success">140 character left</small></div></div>
+        </div>
+
+        <h3>Localization</h3>
+        <p><strong>Bootstrap-Markdown</strong> <code>language</code> option provides a convenient way of retrieving strings in various languages, allowing you to easily support multiple languages within your application.</p>
+
+        <p>First, you need to include the language message, for example you can have bellow lines :</p>
+        <pre class="prettyprint prettyprinted"><span class="pun">;(</span><span class="kwd">function</span><span class="pun">(</span><span class="pln">$</span><span class="pun">){</span><span class="pln">
+  $</span><span class="pun">.</span><span class="pln">fn</span><span class="pun">.</span><span class="pln">markdown</span><span class="pun">.</span><span class="pln">messages</span><span class="pun">[</span><span class="str">'fr'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="str">'Bold'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Gras"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'Italic'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Italique"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'Heading'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Titre"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'URL/Link'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Insérer un lien HTTP"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'Image'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Insérer une image"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'List'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Liste à puces"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'Preview'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Prévisualiser"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'strong text'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"texte important"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'emphasized text'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"texte souligné"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'heading text'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"texte d'entête"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'enter link description here'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"entrez la description du lien ici"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'Insert Hyperlink'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Insérez le lien hypertexte"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'enter image description here'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"entrez la description de l'image ici"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'Insert Image Hyperlink'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Insérez le lien hypertexte de l'image"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'enter image title here'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"entrez le titre de l'image ici"</span><span class="pun">,</span><span class="pln">
+    </span><span class="str">'list text here'</span><span class="pun">:</span><span class="pln"> </span><span class="str">"texte à puce ici"</span><span class="pln">
+  </span><span class="pun">};</span><span class="pln">
+</span><span class="pun">}(</span><span class="pln">jQuery</span><span class="pun">))</span></pre>
+        <p>Afterward, just set the <code>language</code> to use defined locale code</p>
+        <div class="well">
+        <h5>Code</h5>
+        <pre class="prettyprint prettyprinted"><span class="pln">$</span><span class="pun">(</span><span class="str">"#target-editor-with-custom-language"</span><span class="pun">).</span><span class="pln">markdown</span><span class="pun">({</span><span class="pln">language</span><span class="pun">:</span><span class="str">'fr'</span><span class="pun">})</span></pre></div>
+
+        <div class="well">
+        <h5>Result</h5>
+          <div class="md-editor" id="1410189206031"><div class="md-header btn-toolbar"><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Gras (Ctrl+B)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold" data-hotkey="Ctrl+B"><span class="glyphicon glyphicon-bold"></span> </button><button type="button" class="btn btn-default btn-sm" title="Italique (Ctrl+I)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic" data-hotkey="Ctrl+I"><span class="glyphicon glyphicon-italic"></span> </button><button type="button" class="btn btn-default btn-sm" title="Titre (Ctrl+H)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdHeading" data-hotkey="Ctrl+H"><span class="glyphicon glyphicon-header"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Insérer un lien HTTP (Ctrl+L)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl" data-hotkey="Ctrl+L"><span class="glyphicon glyphicon-link"></span> </button><button type="button" class="btn btn-default btn-sm" title="Insérer une image (Ctrl+G)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdImage" data-hotkey="Ctrl+G"><span class="glyphicon glyphicon-picture"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-default btn-sm" title="Unordered List (Ctrl+U)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList" data-hotkey="Ctrl+U"><span class="glyphicon glyphicon-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Ordered List (Ctrl+O)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdListO" data-hotkey="Ctrl+O"><span class="glyphicon glyphicon-th-list"></span> </button><button type="button" class="btn btn-default btn-sm" title="Code (Ctrl+K)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdCode" data-hotkey="Ctrl+K"><span class="glyphicon glyphicon-asterisk"></span> </button><button type="button" class="btn btn-default btn-sm" title="Quote (Ctrl+Q)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdQuote" data-hotkey="Ctrl+Q"><span class="glyphicon glyphicon-comment"></span> </button></div><div class="btn-group"><button type="button" class="btn btn-primary btn-sm btn-default btn-sm" title="Prévisualiser (Ctrl+P)" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-hotkey="Ctrl+P" data-toggle="button"><span class="glyphicon glyphicon-search"></span> Prévisualiser</button></div></div><textarea id="target-editor-with-custom-language" class="md-input" rows="5" style="resize: none;"></textarea></div>
+        </div>
+
+        <h3>API</h3>
+        <p>As you may already notice by now, all hook would passed Editor instance (declared as <code>e</code> in all above examples). It means you could easily use its API to interact with the editor for any purposes. Heres the complete list of <strong>Bootstrap-Markdown</strong> APIs.</p>
+
+        <table class="table table-bordered table-striped">
+          <colgroup>
+            <col class="span1">
+            <col class="span7">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Method Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>showEditor()</code>
+              </td>
+              <td>Toggle on the editor visibility</td>
+            </tr>
+            <tr>
+              <td>
+                <code>showPreview()</code>
+              </td>
+              <td>Toggle on the preview visibility</td>
+            </tr>
+            <tr>
+              <td>
+                <code>hidePreview()</code>
+              </td>
+              <td>Toggle off the editor visibility</td>
+            </tr>
+            <tr>
+              <td>
+                <code>isDirty()</code>
+              </td>
+              <td>Check the editor content state, return true if the original content was changed</td>
+            </tr>
+            <tr>
+              <td>
+                <code>getContent()</code>
+              </td>
+              <td>Get the editor content</td>
+            </tr>
+            <tr>
+              <td>
+                <code>parseContent()</code>
+              </td>
+              <td>Get the parsed editor content</td>
+            </tr>
+            <tr>
+              <td>
+                <code>setContent(<em>string</em> content)</code>
+              </td>
+              <td>Set the editor content</td>
+            </tr>
+            <tr>
+              <td>
+                <code>findSelection(<em>string</em> words)</code>
+              </td>
+              <td>Find some words/sentence within the editor and returned selection object(containing word position and other useful information).</td>
+            </tr>
+            <tr>
+              <td>
+                <code>getSelection()</code>
+              </td>
+              <td>Get the current selected chunk of words within the editor.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>setSelection(<em>int</em> start, <em>int</em> end)</code>
+              </td>
+              <td>Tell the editor to select a span of words from <code>start</code> to <code>end</code>.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>replaceSelection(<em>string</em> content)</code>
+              </td>
+              <td>Replace the current selected chunk of words within the editor with any content.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>getNextTab()</code>
+              </td>
+              <td>Get the next tab memory. Returned selection object(containing word position and other useful information).</td>
+            </tr>
+            <tr>
+              <td>
+                <code>setNextTab(<em>int</em> start, <em>int</em> end)</code>
+              </td>
+              <td>Tell the editor to select a span of words from <code>start</code> to <code>end</code> at next <code>tab</code> keypress event.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>enableButtons(<em>string</em> name)</code>
+              </td>
+              <td>Enabled a button by <code>name</code> that described in <code>buttons</code> or <code>additionalButtons</code> arrays. Passing <code>all</code> will enabled all buttons.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>disableButtons(<em>string</em> name)</code>
+              </td>
+              <td>Disabled a button by <code>name</code> that described in <code>buttons</code> or <code>additionalButtons</code> arrays. Passing <code>all</code> will disabled all buttons.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>showButtons(<em>string</em> name)</code>
+              </td>
+              <td>Show a button by <code>name</code> that described in <code>buttons</code> or <code>additionalButtons</code> arrays.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>hideButtons(<em>string</em> name)</code>
+              </td>
+              <td>Hide a button by <code>name</code> that described in <code>buttons</code> or <code>additionalButtons</code> arrays.</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="alert alert-info">
+          <strong>NOTE</strong>
+          <p>Altought the primary purpose of this plugin is to provide Markdown editor, the design is allowing the plugin to be used as a general purpose editor.</p>
+          <p>The preview functionalities and html to markdown conversion are provided by 3rd party codes : <a href="https://github.com/evilstreak/markdown-js" target="_blank">markdown-js</a>, <a href="https://github.com/chjj/marked" target="_blank">marked</a> (default failover if <i>markdown-js</i> lib not available) and <a href="https://github.com/domchristie/to-markdown" target="_blank">to-markdown</a>. Without them, this plugin would still work and convert the content as-is, so you could easily modify those functionalities yourself via available hooks.</p>
+          <p>Optionally, you could also support hotkeys by simply including <a href="https://github.com/jeresig/jquery.hotkeys" target="_blank">jquery.hotkeys.js</a> (default buttons has already default hotkeys).</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright"><strong>Bootstrap-Markdown</strong> maintained by <a href="https://github.com/toopay">toopay</a></p>
+      </footer>
+    </div>
+
+
+  
+  <script src="./Bootstrap Markdown_files/jquery.min.js"></script>
+  <script src="./Bootstrap Markdown_files/bootstrap.min.js"></script>
+  <script src="./Bootstrap Markdown_files/markdown.js"></script>
+  <script src="./Bootstrap Markdown_files/to-markdown.js"></script>
+  <script src="./Bootstrap Markdown_files/bootstrap-markdown.js"></script>
+  <script src="./Bootstrap Markdown_files/bootstrap-markdown.fr.js"></script>
+  <script src="./Bootstrap Markdown_files/jquery.hotkeys.js"></script>
+  <script src="./Bootstrap Markdown_files/main.js"></script>
+  
+
+</body></html>

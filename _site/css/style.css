@@ -1,0 +1,150 @@
+/* Base */
+body {
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
+	      background-image: url("../images/rep_bg.jpg");
+  margin: 0px;
+  }
+  body a {
+	  text-decoration: initial;
+    color: #f38630; }
+
+.container-fluid {
+	background-color: white;
+  width: 80%;
+  min-width: 770px;
+  margin: 0 auto;
+  margin-top: 1em;
+  position: relative;
+  padding-top: 1px;
+  }
+
+header {
+  text-align: center; }
+  header h1 {
+    /*font-family: "Podkova", cursive;*/
+    line-height: 1em;
+	margin-top: 0.25em;}
+  header h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.5em;
+    max-width: 700px;
+    margin: auto; }
+  header h4 {
+	text-align: center;}
+  header .portrait {
+    text-align: center; }
+    header .portrait img {
+      width: 25%;
+      min-width: 150px; }
+  header #contact {
+    margin-top: 1em; }
+    header #contact ul {
+      list-style: none;
+      margin: 10px 0; }
+      header #contact ul li {
+        display: inline-block; }
+        header #contact ul li img {
+          width: 50px; }
+
+#content {
+  position: relative; }
+  #content nav {
+    text-align: center;
+    padding: 1em; }
+    #content nav ul {
+      margin: 0;
+      font-size: 1.2em; }
+      #content nav ul li {
+        display: inline-block;
+        text-transform: lowercase;
+        margin-right: 1.2em; }
+  #content h1 {
+    font-family: "Cabin", sans-serif;
+    margin-top: 50px;
+    color: #4683DD;
+    text-align: center; }
+  #content #research .project {
+    margin: 30px auto; }
+  #content #research .project-header {
+    text-align: center;
+    margin: 10px 0; }
+    #content #research .project-header img {
+      width: 80%;
+      text-align: center; }
+	#content #research .project-desc {
+	  text-align:justify;
+	}
+  #content #publications ul {
+    list-style: none;
+    margin: 0; }
+    #content #publications ul li {
+      margin-bottom: 20px; }
+
+/* Tablet */
+@media (min-width: 768px) {
+  #research .project {
+    display: table;
+    margin: 0;
+    margin-bottom: 40px; }
+
+  #research .project .project-header {
+    width: 30%;
+    display: table-cell; }
+
+  #research .project-header img {
+    width: 100%; }
+  #research .project .project-header {
+	vertical-align: middle;
+  }
+
+  #research .project .project-desc {
+    float: right; } 
+
+
+  #research .project .project-desc {
+    padding-left: 20px; } }
+/* Desktop */
+@media (min-width: 970px) {
+  header h4 {
+	text-align: right;}
+  header {
+    float: left;
+    margin-right: 2em;
+    position: fixed;
+	padding-top: 50px;}
+    header h1 {
+      text-align: right;
+      font-size: 1.6em; }
+    header h2 {
+      text-align: right; }
+    header .portrait {
+      text-align: right; }
+      header .portrait img {
+        width: 65%; }
+    header #contact {
+      text-align: right; }
+  
+  #content {
+	      padding-right: 45px;
+		      padding-bottom: 45px;
+			      padding-left: 45px;
+	    border-spacing: 2px;
+		    border-color: grey;
+			    border-left: solid 1px;
+    margin-left: 280px; }
+    #content nav {
+      text-align: left;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: white;
+	  width: 77.8%;
+	  margin: 0 auto;
+	  border-bottom: solid 1px;
+  }
+    #content h1 {
+      text-align: left; } }

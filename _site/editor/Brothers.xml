@@ -1,0 +1,105 @@
+'<?xml version="1.0" encoding="UTF-8"?>' +
+'<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>' +
+'<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="grc">' +
+'    <teiHeader>' +
+'        <fileDesc>' +
+'            <titleStmt>' +
+'                <title>PSapphObbink<\/title>' +
+'                <author>Sappho<\/author>' +
+'                <work>Book 1<\/work>' +
+'                <editor>D. Obbink<\/editor>' +
+'            <\/titleStmt>' +
+'            <publicationStmt><\/publicationStmt>' +
+'            <sourceDesc><\/sourceDesc>' +
+'        <\/fileDesc>' +
+'    <\/teiHeader>' +
+'    <facsimile><surface/><\/facsimile>' +
+'    <text>' +
+'        <body>' +
+'            <div type="edition">' +
+'               <div type="textpart">' +
+'                   <lg>' +
+'                       <l>' +
+'                           <lb n="1"/>ἀ<supplied reason="overlap">λλ’ ἄϊ<\/supplied> θρύληϲθα Χάραξον ἔλθην' +
+'                           <lb n="2"/>ν<supplied reason="overlap">ᾶϊ ϲὺ<\/supplied>ν πλήαι. τὰ μέ<unclear>ν<\/unclear> οἴ<unclear>ο<\/unclear>μ<unclear>α<\/unclear>ι Ζεῦϲ' +
+'                           <lb n="3"/>οἶ<supplied reason="overlap">δε ϲύ<\/supplied>μπαντέϲ τε θέοι· ϲὲ <unclear>δ’<\/unclear> οὐ χρῆ' +
+'                           <lb n="4"/>τ<supplied reason="overlap">αῦτα<\/supplied> νόηϲθαι,' +
+'                           <lb/><break/>' +
+'' +
+'                       <\/l>' +
+'                       <l>' +
+'                           <lb n="5"/>ἀλλὰ καὶ πέμπην ἔμε καὶ κέλεϲθαι' +
+'                           <lb n="6"/>πόλλα λ<unclear>ί<\/unclear>ϲϲεϲθα<unclear>ι<\/unclear> βαϲ<unclear>ίλη<\/unclear>αν <unclear>Ἤ<\/unclear>ραν' +
+'                           <lb n="7"/>ἐξίκεϲθαι τυίδε ϲάαν ἄγοντα' +
+'                           <lb n="8"/>νᾶα Χάραξον' +
+'                           <lb/><break/>' +
+'                       <\/l>' +
+'                       <l>' +
+'                           <lb n="9"/>κἄμμ’ ἐπεύρην ἀρ<unclear>τέ<\/unclear>μεαϲ.  τὰ δ’ ἄλλα' +
+'                           <lb n="10"/>πάντα δαιμόνεϲ<unclear>ϲ<\/unclear>ιν ἐπ<unclear>ιτ<\/unclear>ρόπωμεν·' +
+'                           <lb n="11"/>εὔδια<unclear>ι<\/unclear> <unclear>γ<\/unclear>ὰ<unclear>ρ<\/unclear> ἐκ μεγάλαν ἀήτ<unclear>αν<\/unclear>' +
+'                           <lb n="12"/>αἶψα π<unclear>έλο<\/unclear>νται.' +
+'                           <lb/><break/>' +
+'                       <\/l>' +
+'                       <l>' +
+'                           <lb n="13"/>τῶν κε βόλληται βαϲίλευϲ Ὀλύμπω' +
+'                           <lb n="14"/>δαίμον’ ἐκ πόνων ἐπάρωγον ἤδη' +
+'                           <lb n="15"/>περτρόπην, κῆνοι <unclear>μ<\/unclear>άκαρεϲ πέλονται' +
+'                           <lb n="16"/>καὶ πολύολβοι·' +
+'                           <lb/><break/>' +
+'                       <\/l>' +
+'                       <l>' +
+'                           <lb n="17"/><unclear>κ<\/unclear>ἄμμεϲ, αἴ κε τὰν κεφάλ<unclear>α<\/unclear>ν ἀέρ<unclear>ρ<\/unclear>η' +
+'                           <lb n="18"/>Λάρ<unclear>ι<\/unclear>χοϲ καὶ δή ποτ’ ἄν<unclear>η<\/unclear>ρ γένηται,' +
+'                           <lb n="19"/>καὶ μάλ’ ἐκ πόλλ<add place="above">αν<\/add> βα<unclear>ρ<\/unclear>υθ<unclear>υ<\/unclear>μία<unclear>ν<\/unclear> κεν' +
+'                           <lb n="20"/>αἶψα λύθειμεν.' +
+'                           <lb/><bl paragraphus="true" type="forked"/>' +
+'                       <\/l>' +
+'                   <\/lg>' +
+'               <\/div>' +
+'            <\/div>' +
+'' +
+'            <div type="diplomatic">' +
+'               <div type="dip_textpart">' +
+'                    <lg>' +
+'                        <l>' +
+'                            <lb n="1" />αλλαϊθρυληϲθαχαραξονελθην' +
+'                            <lb n="2" />ναϊϲυμπλέαι·ταμε<gap reason="illegible" quantity="1" unit="character"/>οι<gap reason="illegible" quantity="1" unit="character"/>μ<gap reason="illegible" quantity="1" unit="character"/>ιζευϲ' +
+'                            <lb n="3" />οιδεϲυμπαντεϲτεθεοι·ϲε’δ<gap reason="illegible" quantity="1" unit="character"/>ουχρῆ' +
+'                            <lb n="4" />ταυτανοειϲθαι·' +
+'                        <\/l>' +
+'                        <l>' +
+'                            <lb n="5" />αλλακαιπεμπηνεμεκαικελ<del rend="erasure">η<\/del><add place="above">ε<\/add>ϲθαι' +
+'                            <lb n="6" />πολλαλ<gap reason="illegible" quantity="1" unit="character"/>ϲϲεϲθα ̣βαϲ<gap reason="illegible" quantity="3" unit="character"/>αν<gap reason="illegible" quantity="1" unit="character"/>ραν' +
+'                            <lb n="7" />εξικεϲθαιτυιδεϲααναγοντα' +
+'                            <lb n="8" />νααχαραξον·' +
+'                        <\/l>' +
+'                        <l>' +
+'                            <lb n="9" />καμμεπευρηναρ<gap reason="illegible" quantity="2" unit="character"/>μεαϲ·ταδαλλα' +
+'                            <lb n="10" />πανταδαιμονεϲ<gap reason="illegible" quantity="1" unit="character"/>ινεπ<gap reason="illegible" quantity="2" unit="character"/>ροπωμεν' +
+'                            <lb n="11" />ευδια<gap reason="illegible" quantity="1" unit="character"/>α<gap reason="illegible" quantity="1" unit="character"/>εκμεγαλαναητ<gap reason="illegible" quantity="2" unit="character"/>`  ̣΄' +
+'                            <lb n="12" />αιψαπ<gap reason="illegible" quantity="3" unit="character"/>νται·' +
+'                        <\/l>' +
+'                        <l>' +
+'                            <lb n="13" />τωνκεβολληταιβαϲιλευϲολυμπω' +
+'                            <lb n="14" />δάιμονεκπονωνεπαρη<add place="above">ω<\/add>γονηδη' +
+'                            <lb n="15" />περτροπηνκηνοι<gap reason="illegible" quantity="1" unit="character"/>ακαρεϲπελονται' +
+'                            <lb n="16" />καιπολυολβοι·' +
+'                        <\/l>' +
+'                        <l>' +
+'                            <lb n="17" /><gap reason="illegible" quantity="1" unit="character"/>αμμεϲαικετανκεφαλ<gap reason="illegible" quantity="1" unit="character"/>ναερ<gap reason="illegible" quantity="1" unit="character"/>η' +
+'                            <lb n="18" />λαρ ̣χοϲκαιδηποταν<gap reason="illegible" quantity="1" unit="character"/>ργενηται.' +
+'                            <lb n="19" />καιμαλεκπολλ<del rend="erasure">η<\/del><add place="above">αν<\/add>βα<gap reason="illegible" quantity="1" unit="character"/>υθ<gap reason="illegible" quantity="1" unit="character"/>μια<gap reason="illegible" quantity="1" unit="character"/>κεν' +
+'                            <lb n="20" />αιψαλύθειμεν·' +
+'                        <\/l>' +
+'                    <\/lg>' +
+'' +
+'                <\/div>' +
+'            <\/div>' +
+'            ' +
+'            <div type="apparatus" >' +
+'                <lb n="14"><seg type="appItem">ἐπ’ ἀρήον coni. M. L. West<\/seg><\/lb>                            ' +
+'            <\/div>' +
+'        <\/body>' +
+'    <\/text>' +
+'<\/TEI>' +

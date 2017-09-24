@@ -1,0 +1,66 @@
+{% extends 'EventSearch/base.html' %}
+
+{% block content %}
+
+<div id="wrap">
+    <div class="index_header">
+        <img id="eb_home_logo" src="{{ STATIC_URL }}img/eb_card_medium.png">
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="col-md-12" role="main">
+            <div id="form_wrapper" class="row">
+                <form class="form-inline" role="form" method="get" action="{% url 'EventSearch.views.display_events' %}">
+                    <p>Welcome to Eventbrite: SimpleSearch! <br />
+                        Simply select 3 categories below to search for events:</p>
+                    <br />
+                    <h4>Category 1</h4>
+                    <div class="form-group">
+                        <select id="cat_1" name="cat1" onchange="updateCategorySelectionForm(this)">
+                            <option value="">-- Select Category</option>
+                    {% for category in categories %}
+                            <option class="cat-option" value="{{ category.id }}">{{ category.name }}</option>
+                    {% endfor %}
+                        </select>
+                    </div>
+                    <br />
+                    <h4>Category 2</h4>
+                    <div class="form-group">
+                        <select id="cat_2" name="cat2" onchange="updateCategorySelectionForm(this)">
+                            <option value="">-- Select Category</option>
+                    {% for category in categories %}
+                            <option class="cat-option" value="{{ category.id }}">{{ category.name }}</option>
+                    {% endfor %}
+                        </select>
+                    </div>
+                    <br />
+                    <h4>Category 3</h4>
+                    <div class="form-group">
+                        <select id="cat_3" name="cat3" onchange="updateCategorySelectionForm(this)">
+                            <option value="">-- Select Category</option>
+                    {% for category in categories %}
+                            <option value="{{ category.id }}">{{ category.name }}</option>
+                    {% endfor %}
+                        </select>
+                    </div>
+                    <br />
+                {% if form_error %}
+                    <p>
+                        <strong>{{ form_error }}</strong>
+                    </p>
+                {% endif %}
+                    <br />
+                    <input id="cat-submit" type="submit" class="btn btn-default" value="Search" disabled="disabled"/>
+                </form>
+            </div>
+            <br />
+
+            <div class="row" style="text-align: center">
+                <a href="/events/">Browse all events</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

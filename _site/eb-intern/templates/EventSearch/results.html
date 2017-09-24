@@ -1,0 +1,92 @@
+{% extends 'EventSearch/base.html' %}
+{% load date_filter %}
+{% block content %}
+
+<div id="wrap">
+   <div class="index_header">
+      <img id="eb_home_logo" src="{{ STATIC_URL }}img/eb_card_medium.png">
+   </div>
+   <br>
+   <div class="container">
+      <div class="col-md-12" role="main">
+         {% if cat1_name and cat2_name and cat3_name %}
+         <h4>Categories: {{ cat1_name }}, {{ cat2_name }}, and {{ cat3_name }}.</h4>
+         {% else %}
+         <h4>Categories: All</h4>
+         {% endif %}
+         <div class="header_wrapper">
+            <div class="header_left">
+               <strong>{{ event_count }} events found.</strong>
+            </div>
+            <div class="header_right">
+               <strong>Page {{ events.number }} of {{ events.paginator.num_pages }}</strong>
+            </div>
+         </div>
+         {% if events %}
+             {% for event in events %}
+             <hr />
+             <div>
+                <div class="eb_result_name">
+                   {{ forloop.counter0|add:events.start_index }}. <strong><a href="{{ event.url }}">{{ event.name.text }}</a></strong>
+                </div>
+                <div class="eb_result_meta">
+                   Category: {{ event.category.name }} <br />
+                   <!-- Validate presence of organizer's name --->
+                   {% if event.organizer.name %}
+                    {{ event.organizer.name }} <br />
+                   {% endif %}
+                   {{ event.start.local|string_to_datetime }}<br />
+                   <!-- Validate presence of address information --->
+                   {% if event.venue.address.city and event.venue.address.region %}
+                    {{ event.venue.address.city }}, {{ event.venue.address.region }}
+                   {% endif %}
+                </div>
+                <details>
+                   <summary>Description:</summary>
+                   <div>
+                      {% autoescape off %}
+                      {{ event.description.html|safe }}
+                      {% endautoescape %}
+                   </div>
+                </details>
+             </div>
+             {% endfor %}
+             {%  else %}
+             <center>
+                Sorry! Looks like we couldn't find any events for those categories.
+             </center>
+         {% endif %}
+      </div>
+      <div class="pagination">
+         <center>
+            <span class="step-links">
+            {% if events.has_previous %}
+                {% if cat1_id and cat2_id and cat3_id %}
+                    [<a href="?cat1={{ cat1_id }}&cat2={{ cat2_id }}&cat3={{ cat3_id }}&page={{ events.previous_page_number }}">Previous</a>]
+                {% else %}
+                    [<a href="?page={{ events.previous_page_number }}">Previous</a>]
+                {% endif %}
+            {% endif %}
+            <span class="current">
+            <strong>Page {{ events.number }} of {{ events.paginator.num_pages }}</strong>
+            </span>
+            {% if events.has_next %}
+                {% if cat1_id and cat2_id and cat3_id %}
+                    [<a href="?cat1={{ cat1_id }}&cat2={{ cat2_id }}&cat3={{ cat3_id }}&page={{ events.next_page_number }}">Next</a>]
+                {% else %}
+                    [<a href="?page={{ events.next_page_number }}">Next</a>]
+                {% endif %}
+            {% endif %}
+            </span>
+         </center>
+      </div>
+      <br />
+      <br />
+      <hr />
+      <div class="row" style="text-align: center">
+         <a href="/events/">Browse all events</a>
+      </div>
+   </div>
+</div>
+</div>
+{% endblock %}

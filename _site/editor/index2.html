@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real-time XML Editor</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/linedtextarea.css" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="shortcut icon" href="http://toopay.github.io/bootstrap-markdown/img/favicon.png">
+<link href="http://fonts.googleapis.com/css?family=Cardo&subset=latin,greek-ext,greek,latin-ext" rel="stylesheet" type="text/css">
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/linedtextarea.js"></script>
+<script src="src-ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap-hover-dropdown.js"></script>
+
+
+<script type="text/javascript">
+
+var defaultStuff = 'This is default text. Change me!';
+
+var old = '';
+var lineNo = 1;
+
+function init(){
+  for(var i = 0, len = defaultStuff; i < len; i++){
+    console.log(defaultStuff[i]);
+  }
+
+  //document.getElementById('content').value = defaultStuff;
+}
+
+function getLineNumber(textarea) {
+  var lastLine = lineNo;
+  lineNo = textarea.value.substr(0, textarea.selectionStart).split("\n").length;
+
+  $('.codelines .lineno:nth-child('+lastLine+')').removeClass('lineselect');
+  $('.codelines .lineno:nth-child('+lineNo+')').addClass('lineselect');
+}
+
+function update()
+{
+  var d = document.getElementById('translatedXML'); 
+  var cur = editor.getValue();
+
+
+	console.log(cur)
+
+  if (old != cur) {
+    old = cur;
+    //d.value = old;
+    //console.log('Updating to: '+d.innerHTML);
+  }
+
+  window.setTimeout(update, 150);
+}
+
+</script>
+
+
+</head>
+
+<body onload="init();">
+	<div style="padding:2em">
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="active"><a href="#markdown" role="tab" data-toggle="tab">Markdown</a></li>
+			<li><a href="#xml" role="tab" data-toggle="tab">XML</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="markdown">
+				<div id="container" style="width: 99%; height: 99%; padding: 4em;" >
+					<div class="well" style="width: 80%; height: 99%; float: left;">
+						<form style="height: 99%;">
+							<div class="form-group">
+								<input class="form-control" name="title" type="text" placeholder="Title?"/>
+							</div>
+
+
+							<div class="btn-toolbar" style="margin-bottom: 2mm;">
+						      <div class="btn-group">
+						        <button type="button" class="btn btn-default">⸏</button>
+						        <button type="button" class="btn btn-default">⸐</button>
+						        <button type="button" class="btn btn-default">⸑</button>
+						      </div>
+						      <div class="btn-group">
+						          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+						            ⸏
+						          </button>
+						          <ul class="dropdown-menu">
+					            		<li><a tabindex="-1" href="#">⸏(Paragraphos))</a></li>
+					            		<li><a tabindex="-1" href="#">⸐ (L. Forked Paragraphos)</a></li>
+					            		<li><a tabindex="-1" href="#">⸑ (R. Forked Paragraphos)</a></li>
+						           </ul>
+						      </div>
+						     </div>
+							<textarea id="content" name="content" placeholder="Insert the papyrus transcription here." rows="20" style="height: 99%; width=8%;" onkeyup="getLineNumber(this)" onmouseup="this.onkeyup()"></textarea>
+							<label class="checkbox">
+								<input name="publish" type="checkbox"> Publish
+							</label>
+							<hr/>
+							<button type="submit" class="btn">Submit</button>
+						</form> 
+					</div>
+				</div>
+			</div>
+			<div id="xml" class="tab-pane" style="width: 99%; height: 870px; padding:4em;" >
+				<div id="editor" class="well" style="width: 47%; height: 100%; float: left;">Default text!</div>
+			</div>
+		</div>
+	</div>
+				
+	<script>
+		var editor = ace.edit("editor");
+		//editor.setTheme("ace/theme/monokai");
+		editor.getSession().setMode("ace/mode/xml");
+	</script>
+	<script>
+		//update();
+
+		$(document).ready(function() {
+		  // if not using IE
+		  // we have to do this to handle IE10 since the
+		  // jerks removed HTML conditional comment support
+		  if (navigator.appName.indexOf("Microsoft") == -1) {
+		    // set up the lined textarea
+		    initLineText();
+		  } 
+		});
+
+		function initLineText() {
+		  $(function() {
+		    $("#content").linedtextarea({});
+		  });
+		}
+	</script>
+
+</body>
+</html>
