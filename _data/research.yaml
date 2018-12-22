@@ -2,7 +2,7 @@ title: research
 pubs:
  - name: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning"
    citation: "H. Kaur, A.C. Williams, A. Loomis Thompson, W. Lasecki, S. Iqbal, J. Teevan. (2018). Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing."
-   pdf: /
+   pdf: https://web.eecs.umich.edu/~wlasecki/pubs/ActionPlans_CSCW2018.pdf
  - name: "Supporting Workplace Detachment and Reattachment using Conversational Intelligence"
    citation: "A.C. Williams, H. Kaur, G. Mark, A. Loomis Thompson, S. Iqbal, J. Teevan. (2018). Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems."
    pdf: /pubs/chi2018-switchbot.pdf
