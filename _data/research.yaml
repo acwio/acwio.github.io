@@ -1,5 +1,8 @@
 title: research
 pubs:
+ - name: "The Perpetual Work Life of Crowdworkers: How Tooling Practices Increase Fragmentation in Crowdwork"
+   citation: "A.C. Williams, G. Mark, K. Milland, E. Lank, E. Law. (2019). Proceedings of the 23rd ACM Conference on Computer Supported Cooperative Work & Social Computing."
+   pdf: /#
  - name: "Mercury: Empowering Programmers' Mobile Work Practices with Microproductivity"
    citation: "A.C. Williams, H. Kaur, S. Iqbal, R. White, J. Teevan., A. Fourney (2019). Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology."
    pdf: /pubs/uist2019-mercury.pdf  
