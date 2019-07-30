@@ -1,5 +1,8 @@
 title: research
 pubs:
+ - name: "Mercury: Empowering Programmers' Mobile Work Practices with Microproductivity"
+   citation: "A.C. Williams, H. Kaur, S. Iqbal, R. White, J. Teevan., A. Fourney (2019). Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology."
+   pdf: /pubs/uist2019-mercury.pdf  
  - name: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning"
    citation: "H. Kaur, A.C. Williams, A. Loomis Thompson, W. Lasecki, S. Iqbal, J. Teevan. (2018). Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing."
    pdf: https://web.eecs.umich.edu/~wlasecki/pubs/ActionPlans_CSCW2018.pdf
