@@ -1,5 +1,8 @@
 title: research
 pubs:
+ - name: "Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work"
+   citation: "H. Kaur, A.C. Williams, D. McDuff, M. Czerwinski, J. Teevan, S. Iqbal. (2020). Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems."
+   pdf: /pubs/chi-2020-productivity-models.pdf
  - name: "The Perpetual Work Life of Crowdworkers: How Tooling Practices Increase Fragmentation in Crowdwork"
    citation: "A.C. Williams, G. Mark, K. Milland, E. Lank, E. Law. (2019). Proceedings of the 23rd ACM Conference on Computer Supported Cooperative Work & Social Computing."
    pdf: /pubs/cscw2019-tooling-practices.pdf
