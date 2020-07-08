@@ -156,7 +156,7 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
-@media(min-width:1px) {
+@media screen and (min-width:480px) {
     header {
         min-height: 100%;
     }
@@ -185,7 +185,8 @@ header .header-content .header-content-inner p {
 
     #header {
         float: left;
-        width: 190px;
+        width: 200px;
+        margin-right: 30px;
     }
 
     #content {
@@ -199,13 +200,24 @@ header .header-content .header-content-inner p {
         margin-left: 280px;
         min-height: 450px;
     }
+
+    #portrait {
+        border: solid 1px black;
+        width: 95%;
+        max-width: 200px;
+    }
+}
+
+#portrait {
+    border: solid 1px black;
+    max-width: 200px;
 }
 
 #header{
-    width: 190px;
-    margin: 0 auto;
+    width: 200px;
     margin-right: 30px;
     font-size: 0.85em;
+    margin-bottom: 20px;
 }
 
 .section-heading {
@@ -433,11 +445,6 @@ fieldset[disabled] .btn-primary.active {
 img::selection {
     color: #fff;
     background: 0 0;
-}
-
-#portrait {
-    border: solid 1px black;
-    width: 95%;
 }
 
 img::-moz-selection {
