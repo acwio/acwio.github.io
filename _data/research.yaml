@@ -1,39 +1,48 @@
 title: research
 pubs:
  - name: "Toward Voice-Assisted Browsers: A Preliminary Study with Firefox Voice"
-   citation: "A.C. Williams, J. Cambre, I. Bicking, A. Wallin, J. Tsai, J. Kaye. (2020). Proceedings of the 2nd Conference on Conversational User Interfaces (CUI '20)."
+   authors: "A.C. Williams, J. Cambre, I. Bicking, A. Wallin, J. Tsai, and J. Kaye."
+   citation: "Proceedings of the 2nd Conference on Conversational User Interfaces (CUI '20)."
    pdf: /pubs/cui2020-ffvoice.pdf
  - name: "Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work"
-   citation: "H. Kaur, A.C. Williams, D. McDuff, M. Czerwinski, J. Teevan, S. Iqbal. (2020). Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems."
+   authors: "H. Kaur, A.C. Williams, D. McDuff, M. Czerwinski, J. Teevan, S. Iqbal."
+   citation: "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20')."
    pdf: /pubs/chi2020-productivity-models.pdf
  - name: "The Perpetual Work Life of Crowdworkers: How Tooling Practices Increase Fragmentation in Crowdwork"
-   citation: "A.C. Williams, G. Mark, K. Milland, E. Lank, E. Law. (2019). Proceedings of the 23rd ACM Conference on Computer Supported Cooperative Work & Social Computing."
+   authors: "A.C. Williams, G. Mark, K. Milland, E. Lank, and E. Law."
+   citation: "Proceedings of the 23rd ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '19')."
    pdf: /pubs/cscw2019-tooling-practices.pdf
  - name: "Mercury: Empowering Programmers' Mobile Work Practices with Microproductivity"
-   citation: "A.C. Williams, H. Kaur, S. Iqbal, R. White, J. Teevan., A. Fourney (2019). Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology."
+   authors: "A.C. Williams, H. Kaur, S. Iqbal, R. White, J. Teevan., and A. Fourney."
+   citation: "Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (UIST '19'). 2019."
    pdf: /pubs/uist2019-mercury.pdf  
  - name: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning"
-   citation: "H. Kaur, A.C. Williams, A. Loomis Thompson, W. Lasecki, S. Iqbal, J. Teevan. (2018). Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing."
+   authors: "H. Kaur, A.C. Williams, A. Loomis Thompson, W. Lasecki, S. Iqbal, and J. Teevan."
+   citation: "Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '18)."
    pdf: https://web.eecs.umich.edu/~wlasecki/pubs/ActionPlans_CSCW2018.pdf
  - name: "Supporting Workplace Detachment and Reattachment using Conversational Intelligence"
-   citation: "A.C. Williams, H. Kaur, G. Mark, A. Loomis Thompson, S. Iqbal, J. Teevan. (2018). Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems."
+   authors: "A.C. Williams, H. Kaur, G. Mark, A. Loomis Thompson, S. Iqbal, and J. Teevan."
+   citation: "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems."
    pdf: /pubs/chi2018-switchbot.pdf
- - name: "CrowdCurio: an online crowdsourcing platform to facilitate climate change studies using herbarium specimens"
-   citation: "C.G. Willis, E. Law, A.C. Williams, B. Franzone, R. Bernardos, L. Bruno, C. Hopkins, C. Schorn, E. Weber, D. Park, C.Davis. (2017). New Phytologist. 215.1 (2017): 479-488."
-   web: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.14535
- - name: "Seeing Sound: Investigating the Effects of Visualizations and Complexity on Crowdsourced Audio Annotations"
-   citation: "M. Cartwright, A. Seals, J. Salamon, A.C. Williams, S. Mikloska, D. Macconnell, E. Law, J.P. Bello, O. Nov. (2017). Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing."
+#  - name: "CrowdCurio: an online crowdsourcing platform to facilitate climate change studies using herbarium specimens"
+#    authors: "C.G. Willis, E. Law, A.C. Williams, B. Franzone, R. Bernardos, L. Bruno, C. Hopkins, C. Schorn, E. Weber, D. Park, and C.Davis."
+#    citation: "New Phytologist. 215.1 (2017): 479-488."
+#    web: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.14535
+ - name: "Seeing Sound: Investigating the Effects of Visualization and Complexity on Crowdsourced Audio Annotations"
+   authors: "M. Cartwright, A. Seals, J. Salamon, A.C. Williams, S. Mikloska, D. Macconnell, E. Law, J.P. Bello, and O. Nov."
+   citation: "Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '17')."
    pdf: http://www.justinsalamon.com/uploads/4/3/9/4/4394963/cartwright-seeingsound-pacmhci-17.pdf
  - name: "Deja Vu: Characterizing Worker Reliability Using Task Consistency"
-   citation: "A.C. Williams, J. Goh, C.G. Willis, A.M. Ellison, J.H. Brusuelas, C. Davis, E. Law. (2017). Proceedings of the Fifth AAAI Conference on Human Computation."
+   authors: "A.C. Williams, J. Goh, C.G. Willis, A.M. Ellison, J.H. Brusuelas, C. Davis, and E. Law."
+   citation: "Proceedings of the Fifth AAAI Conference on Human Computation (HCOMP '17')."
    pdf: /pubs/hcomp2017-dejavu.pdf
  - name: "Crowdsourcing as a Tool for Research: Implications of Uncertaincy"
-   description: Numerous crowdsourcing platforms are now available to support research as well as commercial goals. However, crowdsourcing is not yet widely adopted by researchers for generating, processing or analyzing research data. This study develops a deeper understanding of the circumstances under which crowdsourcing is a useful, feasible or desirable tool for research, as well as the factors that may influence researchers’ decisions around adopting crowdsourcing technology. We conducted semi-structured interviews with 18 researchers in diverse disciplines, spanning the humanities and sciences, to illuminate how research norms and practitioners’ dispositions were related to uncertainties around research processes, data, knowledge, delegation and quality. The paper concludes with a discussion of the design implications for future crowdsourcing systems to support research.
-   citation: "E. Law, K.Z. Gajos, A. Wiggins, M.L. Gray, and A. Williams. (2016). Proceedings of the 20th ACM Conference on Computer Supported Cooperative Work & Social Computing."
+   authors: "E. Law, K.Z. Gajos, A. Wiggins, M.L. Gray, and A. Williams."
+   citation: "Proceedings of the 20th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '16)."
    pdf: http://www.eecs.harvard.edu/~kgajos/papers/2017/law17-crowdsourcing.pdf
  - name: "Ensemble: A Hybrid Human-Machine System for Generating Melody Scores from Audio"
-   description: Music transcription is a highly complex task that is difficult for automated algorithms, and equally challenging to people, even those with many years of musical training. Furthermore, there is a shortage of high-quality datasets for training automated transcription algorithms. In this research, we explore a semi-automated, crowdsourced approach to generate music transcriptions, by first running an automatic melody transcription algorithm on a (polyphonic) song to produce a series of discrete notes representing the melody, and then soliciting the crowd to correct this melody. We present a novel web-based interface that enables the crowd to correct transcriptions, report results from an experiment to understand the capabilities of non-experts to perform this challenging task, and characterize the characteristics and actions of workers and how they correlate with transcription performance.
-   citation: "T. Tse, J. Salamon, A. Williams, H. Jiang and E. Law. (2016). Proceedings of the 17th International Society for Music Information Retrieval Conference."
+   authors: "T. Tse, J. Salamon, A. Williams, H. Jiang and E. Law."
+   citation: "Proceedings of the 17th International Society for Music Information Retrieval Conference (ISMIR '16)."
    pdf: http://www.justinsalamon.com/uploads/4/3/9/4/4394963/tse_ensemble_ismir2016.pdf
 #  - name: "Proteus: A Platform for Born Digital Critical Editions of Literary and Subliterary Papyri"
 #    description: Today, digital libraries, or digital repositories, can be found in nearly any discipline studying collections of text, manuscripts, or other variations of literature. However, many of these digital libraries operate on a traditional model that fails to lend itself to the user outside of fundamental operations (<i>i.e.</i>, Searching). Proteus, still a work-in-progress, leverages modern computing methods and techniques to aid the modern papyrologist in the study and analysis of papyrus fragments.
