@@ -14,7 +14,7 @@ pubs:
    pdf: /pubs/cscw2019-tooling-practices.pdf
  - name: "Mercury: Empowering Programmers' Mobile Work Practices with Microproductivity"
    authors: "A.C. Williams, H. Kaur, S. Iqbal, R. White, J. Teevan., and A. Fourney."
-   citation: "Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (UIST '19'). 2019."
+   citation: "Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (UIST '19')."
    pdf: /pubs/uist2019-mercury.pdf  
  - name: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning"
    authors: "H. Kaur, A.C. Williams, A. Loomis Thompson, W. Lasecki, S. Iqbal, and J. Teevan."
