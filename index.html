@@ -1,177 +1,225 @@
 ---
 layout: default
 ---
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">	
+    <!-- <div>
+        <ul class="nav nav-pills nav-fill nav-links nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="lab-tab" data-toggle="tab" href="#lab" role="tab" aria-controls="lab" aria-selected="false">Research</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="teaching-tab" data-toggle="tab" href="#teaching" role="tab" aria-controls="teaching" aria-selected="false">Teaching</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- <hr class="hr-black" style="width: 60%;border-width: 1px;max-width: 400px;margin-top:20px;margin-bottom:20px;"> -->
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container-fluid">
                 <div class="row">
-                    <div id="header">
-                        <hgroup>
-                            <div class="portrait">
-                                <img id="portrait" src="img/headshot2.png" alt="Alex C. Williams" />
+                    <div class="col-xs-12">	
+                        <div class="row">
+                            <div id="header">
+                                <hgroup>
+                                    <div class="portrait">
+                                        <img id="portrait" src="img/headshot2.png" alt="Alex C. Williams" />
+                                    </div>
+                                    <h4 style="color: #EA9E22; font-weight: 600;">Alex C. Williams</h4>
+                                    <div class="portrait-meta">
+                                        <i>Assistant Professor</i>, EECS<br>
+                                        University of Tennessee, Knoxville
+                                    </div>
+                                </hgroup>
+                                <!-- <div class="contact-header">
+                                    <h5>CONTACT INFO</h5>
+                                </div>
+                                <div class="contact">
+                                    acw [at] utk.edu
+
+                                    <p></p>
+                                </div>
+
+                                <hr style="width: 30%;border-width: 1px;max-width: 400px;">
+
+                                <div class="profile-links" style="text-align: center;">
+                                    <a href="https://scholar.google.ca/citations?user=WyOLLiwAAAAJ&hl=en"><img style="width: 48px" src="/img/gscholar.png" alt="Google Scholar icon"></a>
+
+                                    <p></p>
+                                </div> -->
                             </div>
-                            <h4 style="color: #EA9E22; font-weight: 600;">Alex C. Williams</h4>
-                            <div class="portrait-meta">
-                                <i>Assistant Professor</i>, EECS<br>
-                                University of Tennessee, Knoxville
+                            <div>
+                                <!-- <hgroup>
+                                    <h4>Bio</h4>
+                                </hgroup> -->
+                                <p>
+                                I'm an Assistant Professor in the <a href="https://www.eecs.utk.edu/">Department of Electrical Engineering and Computer Science</a> at the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a> where I lead the Laboratory for Transformative Workplaces. My research intersects human-computer interaction, artificial intelligence, machine learning, cognitive science, and workplace studies. I earned my PhD from the University of Waterloo where I worked with <a href="http://www.edithlaw.ca">Edith Law</a> and <a href="https://cs.uwaterloo.ca/~lank/">Edward Lank</a>.
+                                </p> 
+                
+                                <p>
+                                    Before joining UTK, I spent several months working as a postdoctoral researcher with Gloria Mark in the the University of California, Irvine's <a href="https://www.informatics.uci.edu/">Informatics Department</a>. I have also been a member of several research teams across <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, <a href="https://research.mozilla.org/">Mozilla Research</a>, <a href="http://www.ornl.gov">Oak Ridge National Laboratory</a>, and the <a href="http://www.ox.ac.uk">University of Oxford</a>.
+                                </p>
+            
+                                <p>
+                                    <strong>Research Positions Available!:</strong> I'm looking for several students to join my lab at the <a href="https://www.eecs.utk.edu/">University of Tennessee, Knoxville</a>. If you're interested in doing graduate or undergraduate research in HCI or applied AI, get in touch via <a href="mailto:acw@utk.edu?subject=Interested in HCI Research@UTK!">email</a>! 
+                                </p>
                             </div>
-                        </hgroup>
-                        <!-- <div class="contact-header">
-                            <h5>CONTACT INFO</h5>
                         </div>
-                        <div class="contact">
-                            acw [at] utk.edu
+                    </div>
+                </div>
 
-                            <p></p>
+                <hr class="hr-black" style="width: 60%;border-width: 1px;max-width: 400px;margin-top:20px;margin-bottom:20px;">
+
+                <div class="row">
+                    <div class="col-xs-12">	
+
+                        <div class="news-container">
+                            <h4>News</h4>
+                            <ul class="news-list">
+                                <li style="margin-bottom: 5px;">
+                                    <div class='news-month'>July 2020:</div> Our work on <a href="pubs/nfw2020-task-management-boundaries.pdf">managing tasks across the work-life boundary</a> was accepted to <a href="https://www.microsoft.com/en-us/research/event/new-future-of-work/">NFW 2020</a>.
+                                </li>
+                                <li style="margin-bottom: 5px;">
+                                    <div class='news-month'>July 2020:</div> I'm serving on the <a href="https://www.microsoft.com/en-us/research/event/new-future-of-work/">TheWebConf 2021</a>'s Crowdsourcing and Human Computation PC.
+                                </li>
+                                <li style="margin-bottom: 5px;">
+                                    <div class='news-month'>June 2020:</div> I'm serving as a PC Member for the <a href="https://www.microsoft.com/en-us/research/event/new-future-of-work/">2020 Symposium on the New Future of Work (NFW 2020)</a>.
+                                </li>
+                                <li style="margin-bottom: 5px;">
+                                    <div class='news-month'>June 2020:</div> I'm teaching <a href="#">COSC425: Introduction to Machine Learning</a> for the Fall 2020 term.
+                                </li>
+                                <li style="margin-bottom: 5px;">
+                                    <div class='news-month'>May 2020:</div> I'm serving as <a href="https://cscw.acm.org/2020/index.php/committee/">Workshops Co-Chair</a> for CSCW2020.
+                                </li>
+                            </ul>
                         </div>
 
-                        <hr style="width: 30%;border-width: 1px;max-width: 400px;">
+                        <hr class="hr-black" style="width: 60%;border-width: 1px;max-width: 400px;margin-top:20px;margin-bottom:20px;">
 
-                        <div class="profile-links" style="text-align: center;">
-                            <a href="https://scholar.google.ca/citations?user=WyOLLiwAAAAJ&hl=en"><img style="width: 48px" src="/img/gscholar.png" alt="Google Scholar icon"></a>
+                        <div class="news-container">
+                            <h4>Selected Publications</h4>
+                            {% for research in site.data.research.pubs %}
+                        <div class="project">
+                            <span style="font-weight: 600">
+                            {{ research.name }}.
+                            </span> <br/>
+                        {{ research.authors }}
+                        <br/>
+                        {{ research.citation }}
+                            <br/>
+                            <p class="reference-url-btn">
+                                {% if research.thesis%}
+                                <a class="thesis">Thesis</a>
+                                {% endif %}
+                                {% if research.pdf %}
+                                <a class="file" href="{{ research.pdf}}">PDF</a>
+                                {% endif %}
+                                {% if research.web %}
+                                <a class="file-web" href="{{ research.web}}">Web</a>
+                                {% endif %}
+                            </p>
 
-                            <p></p>
-                        </div> -->
+                            <!-- <blockquote><p>
+                                {{ research.citation }}
+                            </p></blockquote> -->
+                        </div>
+                        {% endfor %}
+                        </div>
+
+
+                        
                     </div>
-                    <div>
-                        <!-- <hgroup>
-                            <h4>Bio</h4>
-                        </hgroup> -->
+
+                    <div id="research" class='page-url-dest' style="display: none;">
+                            <h3>Research Focus</h3>
+                        <div class="project">
+                            <div class="project-title">
+                                Curiosity, Citizen Science, and Virtual Agents
+                            </div>
+                            <div class="project-desc">
+                                My current research focuses on the intersection of curiosity, citizen science, and virtual agents. The theme of my research centers around how curiosity can be leveraged and exploited to make learners (i.e. volunteers or crowd-workers) more excited and engaged with scientific crowdsourcing tasks. 
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <div class="project-title">
+                                Experimental Human-in-the-Loop Systems
+                            </div>
+                            <div class="project-desc">
+                                My research centers around building systems that integrate human input as a computational units. Building hyrbid human-machine systems that perform complex tasks better than either human or machine could independently is non-trivial. This area of work is exploratory and open-ended.
+                            </div>
+                        </div>
+
+                        <h3>Publications</h3>
+                        {% for research in site.data.research.pubs %}
+                        <div class="project">
+                            <div class="project-title">
+                                {{ research.name }}
+                            </div>
+                            <div class="project-desc">
+                                {{ research.description }}
+                            </div>
+                            <br>
+                            <p>
+                                {% if research.thesis%}
+                                <a class="thesis">Thesis</a>
+                                {% endif %}
+                                {% if research.pdf %}
+                                <a class="file" href="{{ research.pdf}}">PDF</a>
+                                {% endif %}
+                            </p>
+                            <blockquote><p>
+                                {{ research.citation }}
+                            </p></blockquote>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div id="personal" class='page-url-dest' style="display: none;">
+                        <h3>Personal</h3>
                         <p>
-                           I'm an Assistant Professor in the <a href="https://www.eecs.utk.edu/">Department of Electrical Engineering and Computer Science</a> at the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a> where I lead the Laboratory for Transformative Workplaces. My research intersects human-computer interaction, artificial intelligence, machine learning, cognitive science, and workplace studies. I earned my PhD from the University of Waterloo where I worked with <a href="http://www.edithlaw.ca">Edith Law</a> and <a href="https://cs.uwaterloo.ca/~lank/">Edward Lank</a>.
-                        </p> 
-        
-                        <p>
-                            Before joining UTK, I spent several months working as a postdoctoral researcher with Gloria Mark in the the University of California, Irvine's <a href="https://www.informatics.uci.edu/">Informatics Department</a>. I have also been a member of several research teams across <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, <a href="https://research.mozilla.org/">Mozilla Research</a>, <a href="http://www.ornl.gov">Oak Ridge National Laboratory</a>, and the <a href="http://www.ox.ac.uk">University of Oxford</a>.
+                            In my free time, I play classical guitar. A few of my favorite musicians that draw inspiration from
+                            the classical guitar literature are <a href="https://www.youtube.com/watch?v=wLjG8L4nnh4">Django Reinhardt</a>,
+                            <a href="https://www.youtube.com/watch?v=6f3pHYwL9kY">Plini</a>, and
+                            <a href="https://www.youtube.com/watch?v=0ipv_l7KoSI">Intervals</a>.
                         </p>
-    
                         <p>
-                            <strong>Research Positions Available!:</strong> I'm looking for several students to join my lab at the <a href="https://www.eecs.utk.edu/">University of Tennessee, Knoxville</a>. If you're interested in doing graduate or undergraduate research in HCI or applied AI, get in touch via <a href="mailto:acw@utk.edu?subject=Interested in HCI Research@UTK!">email</a>! 
+                            When I lived in England, I became a Baron of the principality of <a href="http://www.sealandgov.org/">Sealand</a>.
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <hr style="width: 60%;border-width: 1px;max-width: 400px;margin-top:20px;margin-bottom:20px;">
-
-        <div class="row">
-            <div class="col-xs-12">	
-
-                <div class="news-container">
-                    <h4>News</h4>
-                    <ul class="news-list">
-                        <li style="margin-bottom: 5px;">
-                            <div class='news-month'>June 2020:</div> I'm serving as a PC Member for the <a href="https://www.microsoft.com/en-us/research/event/new-future-of-work/">2020 Symposium on the New Future of Work</a>.
-                        </li>
-                        <li style="margin-bottom: 5px;">
-                            <div class='news-month'>June 2020:</div> I'm teaching <a href="#">COSC425: Introduction to Machine Learning</a> for the Fall 2020 term.
-                        </li>
-                        <li style="margin-bottom: 5px;">
-                            <div class='news-month'>May 2020:</div> I'm serving as <a href="https://cscw.acm.org/2020/index.php/committee/">Workshops Co-Chair</a> for CSCW2020.
-                        </li>
-                        <li style="margin-bottom: 5px;">
-                            <div class='news-month'>May 2020:</div> Our <a href="/pubs/cui2020-ffvoice.pdf">preliminary user study with FireFox Voice</a> was accepted to CUI2020's Poster track.
-                        </li>
-                        <li style="margin-bottom: 5px;">
-                            <div class='news-month'>March 2020:</div> I demo'd <a href="/pubs/chi2020-ffvoice.pdf">voice-powered web browsing with Firefox Voice</a> at the <a href="http://www.speechinteraction.org/CHI2020/">CUI@CHI2020 workshop</a>.
-                        </li>
-                    </ul>
-                </div>
-
-                <hr style="width: 60%;border-width: 1px;max-width: 400px;margin-top:20px;margin-bottom:20px;">
-
-                <div class="news-container">
-                    <h4>Selected Publications</h4>
-                    {% for research in site.data.research.pubs %}
-                <div class="project">
-                    <span style="font-weight: 600">
-                      {{ research.name }}.
-                    </span> <br/>
-                   {{ research.authors }}
-                   <br/>
-                   {{ research.citation }}
-                    <br/>
-                    <p class="reference-url-btn">
-                        {% if research.thesis%}
-                        <a class="thesis">Thesis</a>
-                        {% endif %}
-                        {% if research.pdf %}
-                        <a class="file" href="{{ research.pdf}}">PDF</a>
-                        {% endif %}
-                        {% if research.web %}
-                        <a class="file-web" href="{{ research.web}}">Web</a>
-                        {% endif %}
-                    </p>
-
-                    <!-- <blockquote><p>
-                        {{ research.citation }}
-                    </p></blockquote> -->
-                </div>
-                {% endfor %}
-                </div>
-
-
-                
+        <div class="tab-pane" id="lab" role="tabpanel" aria-labelledby="lab-tab">
+            <div class="container-fluid">
+                Research Derp.
             </div>
+        </div>
 
-            <div id="research" class='page-url-dest' style="display: none;">
-                    <h3>Research Focus</h3>
-                <div class="project">
-                    <div class="project-title">
-                        Curiosity, Citizen Science, and Virtual Agents
+        <div class="tab-pane" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-3">	
+                            <div class="row" style="margin: 0 auto;width: fit-content;">
+                                <div class="course-icon">
+                                    <img src="https://image.flaticon.com/icons/svg/2103/2103658.svg"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-9">	
+                            <div class="row">
+                                <div class="course-title"><a href="#">COSC 425: Introduction to Machine Learning (Fall 2020)</a></div>
+                                <div class="course-description">
+                                    Machine learning is concerned with computer programs that automatically improve their performance through experience. This course covers the theory and practice of machine learning from a variety of perspectives. We cover topics such as clustering, decision trees, neural network learning, statistical learning methods, Bayesian learning methods, dimension reduction, kernel methods, and reinforcement learning. Programming assignments include implementation and hands-on experiments with various learning algorithms.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-desc">
-                        My current research focuses on the intersection of curiosity, citizen science, and virtual agents. The theme of my research centers around how curiosity can be leveraged and exploited to make learners (i.e. volunteers or crowd-workers) more excited and engaged with scientific crowdsourcing tasks. 
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project-title">
-                        Experimental Human-in-the-Loop Systems
-                    </div>
-                    <div class="project-desc">
-                        My research centers around building systems that integrate human input as a computational units. Building hyrbid human-machine systems that perform complex tasks better than either human or machine could independently is non-trivial. This area of work is exploratory and open-ended.
-                    </div>
-                </div>
-
-                <h3>Publications</h3>
-                {% for research in site.data.research.pubs %}
-                <div class="project">
-                    <div class="project-title">
-                        {{ research.name }}
-                    </div>
-                    <div class="project-desc">
-                        {{ research.description }}
-                    </div>
-                    <br>
-                    <p>
-                        {% if research.thesis%}
-                        <a class="thesis">Thesis</a>
-                        {% endif %}
-                        {% if research.pdf %}
-                        <a class="file" href="{{ research.pdf}}">PDF</a>
-                        {% endif %}
-                    </p>
-                    <blockquote><p>
-                        {{ research.citation }}
-                    </p></blockquote>
-                </div>
-                {% endfor %}
             </div>
-
-            <div id="personal" class='page-url-dest' style="display: none;">
-                <h3>Personal</h3>
-                <p>
-                    In my free time, I play classical guitar. A few of my favorite musicians that draw inspiration from
-                    the classical guitar literature are <a href="https://www.youtube.com/watch?v=wLjG8L4nnh4">Django Reinhardt</a>,
-                    <a href="https://www.youtube.com/watch?v=6f3pHYwL9kY">Plini</a>, and
-                    <a href="https://www.youtube.com/watch?v=0ipv_l7KoSI">Intervals</a>.
-                </p>
-                <p>
-                    When I lived in England, I became a Baron of the principality of <a href="http://www.sealandgov.org/">Sealand</a>.
-                </p>
-            </div>
-
         </div>
     </div>

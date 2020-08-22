@@ -1,21 +1,25 @@
 title: research
 pubs:
+ - name: "Managing Tasks Across the Work-Life Boundary: Opportunities, Challenges, and Directions"
+   authors: "A.C. Williams, S. Iqbal, J. Kiseleva, and R.W. White."
+   citation: "The 2020 Symposium on the New Future of Work (NFW '20)."
+   pdf: pubs/nfw2020-task-management-boundaries.pdf
  - name: "Toward Voice-Assisted Browsers: A Preliminary Study with Firefox Voice"
    authors: "A.C. Williams, J. Cambre, I. Bicking, A. Wallin, J. Tsai, and J. Kaye."
    citation: "Proceedings of the 2nd Conference on Conversational User Interfaces (CUI '20)."
-   pdf: /pubs/cui2020-ffvoice.pdf
+   pdf: pubs/cui2020-ffvoice.pdf
  - name: "Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work"
    authors: "H. Kaur, A.C. Williams, D. McDuff, M. Czerwinski, J. Teevan, S. Iqbal."
    citation: "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20')."
-   pdf: /pubs/chi2020-productivity-models.pdf
+   pdf: pubs/chi2020-productivity-models.pdf
  - name: "The Perpetual Work Life of Crowdworkers: How Tooling Practices Increase Fragmentation in Crowdwork"
    authors: "A.C. Williams, G. Mark, K. Milland, E. Lank, and E. Law."
    citation: "Proceedings of the 23rd ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '19')."
-   pdf: /pubs/cscw2019-tooling-practices.pdf
+   pdf: pubs/cscw2019-tooling-practices.pdf
  - name: "Mercury: Empowering Programmers' Mobile Work Practices with Microproductivity"
    authors: "A.C. Williams, H. Kaur, S. Iqbal, R. White, J. Teevan., and A. Fourney."
    citation: "Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (UIST '19')."
-   pdf: /pubs/uist2019-mercury.pdf  
+   pdf: pubs/uist2019-mercury.pdf  
  - name: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning"
    authors: "H. Kaur, A.C. Williams, A. Loomis Thompson, W. Lasecki, S. Iqbal, and J. Teevan."
    citation: "Proceedings of the 22nd ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '18)."
@@ -23,7 +27,7 @@ pubs:
  - name: "Supporting Workplace Detachment and Reattachment using Conversational Intelligence"
    authors: "A.C. Williams, H. Kaur, G. Mark, A. Loomis Thompson, S. Iqbal, and J. Teevan."
    citation: "Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems."
-   pdf: /pubs/chi2018-switchbot.pdf
+   pdf: pubs/chi2018-switchbot.pdf
 #  - name: "CrowdCurio: an online crowdsourcing platform to facilitate climate change studies using herbarium specimens"
 #    authors: "C.G. Willis, E. Law, A.C. Williams, B. Franzone, R. Bernardos, L. Bruno, C. Hopkins, C. Schorn, E. Weber, D. Park, and C.Davis."
 #    citation: "New Phytologist. 215.1 (2017): 479-488."
@@ -35,7 +39,7 @@ pubs:
  - name: "Deja Vu: Characterizing Worker Reliability Using Task Consistency"
    authors: "A.C. Williams, J. Goh, C.G. Willis, A.M. Ellison, J.H. Brusuelas, C. Davis, and E. Law."
    citation: "Proceedings of the Fifth AAAI Conference on Human Computation (HCOMP '17')."
-   pdf: /pubs/hcomp2017-dejavu.pdf
+   pdf: pubs/hcomp2017-dejavu.pdf
  - name: "Crowdsourcing as a Tool for Research: Implications of Uncertaincy"
    authors: "E. Law, K.Z. Gajos, A. Wiggins, M.L. Gray, and A. Williams."
    citation: "Proceedings of the 20th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW '16)."

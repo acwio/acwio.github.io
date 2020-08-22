@@ -24,6 +24,10 @@ table.text-left td {
 	border-top: 2px solid black;
 }
 
+.related {
+	border-top: 2px solid #ffffff;
+}
+
 .due-date {
 	background-color: pink;
     padding: 2px;
@@ -47,4 +51,39 @@ table.text-left td {
 	width: 250px;
     float: left;
     margin-right: 15px;
+}
+
+.class-time {
+	font-size: 18px !important;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.instructor {
+	font-size: 18px !important;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+
+.ta {
+	font-size: 16px !important;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.office-hours {
+	font-size: 14px !important;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 25px !important;
 }
