@@ -87,3 +87,7 @@ table.text-left td {
 h1 {
 	font-size: 25px !important;
 }
+
+.class-name {
+	font-weight: 600;
+}
