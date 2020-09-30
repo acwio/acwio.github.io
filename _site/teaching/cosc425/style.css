@@ -91,3 +91,44 @@ h1 {
 .class-name {
 	font-weight: 600;
 }
+
+.no-class {
+	background: #f0847d;
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.zoom-class {
+	background: #89d17d;
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.team-class {
+	background: #7dbbd1;
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.future-class {
+	color: #9a9a9a;
+	font-weight: 300 !important;
+	font-style: italic;
+}
+
+.announcement-due-date {
+	color: red;
+}
+
+.announcement-released, .announcement-released a{
+	color: #4a8f3f
+}
+
+.team-prj-banner {
+	border: 1px solid black;
+}
+
+.nav.nav-tabs > li.disabled {     pointer-events: none;     a {         color: silver;     } }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    font-weight: 600;
+}

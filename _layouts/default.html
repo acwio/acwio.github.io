@@ -60,15 +60,9 @@
 <script src="js/creative.js"></script>
 
 <script>
-    // $('.page-url').click(function(e){
-    //     $('.page-url-dest').hide();
-    //     $('li.active').removeClass('active');
-
-    //     $(e.currentTarget.hash).show();
-    //     $(e.currentTarget.parentNode).addClass('active');
-
-    //     setTimeout(function(){$('html, body').animate({ scrollTop: 0 }, 0)}, 1);
-    // })
+    if(window.location.hostname === 'acw.io'){
+      window.location.replace("http://web.eecs.utk.edu/~acw");
+    }
 </script>
 </body>
 </html>
