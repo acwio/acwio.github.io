@@ -98,6 +98,12 @@ h1 {
 	padding: 3px;
 }
 
+.project-class {
+	background: #a9f07d;
+	border: 1px solid black;
+	padding: 3px;
+}
+
 .zoom-class {
 	background: #89d17d;
 	border: 1px solid black;
@@ -132,3 +138,4 @@ h1 {
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     font-weight: 600;
 }
+
