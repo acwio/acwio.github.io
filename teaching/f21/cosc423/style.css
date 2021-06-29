@@ -88,8 +88,18 @@ h1 {
 	font-size: 25px !important;
 }
 
+.class-name {
+	font-weight: 600;
+}
+
 .no-class {
 	background: #f0847d;
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.project-class {
+	background: #a9f07d;
 	border: 1px solid black;
 	padding: 3px;
 }
@@ -100,20 +110,8 @@ h1 {
 	padding: 3px;
 }
 
-.free-class {
-	background: #9ea5dc;
-	border: 1px solid black;
-	padding: 3px;
-}
-
 .team-class {
 	background: #7dbbd1;
-	border: 1px solid black;
-	padding: 3px;
-}
-
-.milestone-class {
-	background: #d1ad7d;
 	border: 1px solid black;
 	padding: 3px;
 }

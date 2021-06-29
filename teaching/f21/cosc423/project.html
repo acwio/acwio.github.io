@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+		<script src="js/jquery.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="scss/font-awesome.min.css">
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>COSC425 - Team Project</title>
+
+	</head>
+	<body>
+		
+		<!-- Anything with the tag QUARTERLY next to it has to be updated each quarter. -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">	
+					<div class="row">
+						<div style="float: left">
+							<h1>COSC425: Final Team Project</h1>
+						</div>
+
+						<p style="margin-top: 20px; float: right">
+							<a href="#description">Overview</a>
+							&bull;
+							<a href="#proposal">Milestones</a>
+						</p>
+					</div>
+					<hr />
+
+					<img class="team-prj-banner" src="images/team-project-banner.png"/>
+					
+					<h2 id="description">Overview</h2>
+
+					<p style="text-align: justify">
+						In 2019, a Forbes article stated that <a href="https://www.forbes.com/sites/cognitiveworld/2019/08/29/software-ate-the-world-now-ai-is-eating-software/#35c7fac58107">"Software Ate The World, Now AI Is Eating Software"</a>. From social media platforms to motor vehicles, our lives have become intertwined with technologies that makes predictions about the world around us. It is generally expected that, as time moves forward, predictive technology will continue to thread our lives, for better or worse.
+					</p>
+					<p>
+						Your final project is a team project in which you will explore the gamut of practical machine learning. You will be evaluated both individually and as a team. The project spans an 10-week period, separated by 5 milestones:
+					</p>
+					
+					<table class="table text-left">
+						<tr><td>Goal</td><td>Description</td><td>Value</td><td>Due Date</td></tr>
+						<!-- Week 1: Introduction -->
+						<tr class="new-week">
+							<td><strike>Milestone 1: Setting</strike></td><td><strike>Identify a problem and setting.</strike></td><td>10%</td><td><strike>Oct 9</strike></td>
+						</tr>
+						<tr>
+							<td><strike>Milestone 2: Dataset</strike></td><td><strike>Design your dataset.</strike></td><td>30%</td><td><strike>Oct 30</strike></td>
+                        </tr>
+                        <tr>
+							<td><strike>Milestone 3: Approach+Eval</strike></td><td><strike>Design your approach & eval.</strike></td><td>30%</td><td><strike>Nov 20</strike></td>
+                        </tr>
+                        <tr>
+							<td>Milestone 4: Dissemination</td><td>Final report + presentation.</td><td>30%</td><td>Dec 4</td>
+						</tr>
+						
+					</table>
+
+					<h2 id="milestones">Milestones</h2>
+					<p>
+						Below, you can cycle through the various Milestone tabs to see their requirements.
+					</p>
+
+					<ul class="nav nav-tabs nav-justified">
+						<li class="active"><a data-toggle="tab" href="#milestone1">M1. Setting</a></li>
+						<li><a data-toggle="tab" href="#milestone2">M2. Dataset</a></li>
+						<li><a data-toggle="tab" href="#milestone3">M3. Approach+Eval</a></li>
+						<li><a data-toggle="tab" href="#milestone4">M4. Dissemination</a></li>
+					</ul>
+						
+					<div class="tab-content">
+						<div id="milestone1" class="tab-pane fade in active">
+							<p></p>
+							<!-- <h2>Milestone 1: Setting</h2> -->
+							<p>
+								The objective of the Milestone 1 (M1) is identifying a problem setting. Far too often, machine learning is applied to problem spaces that "don't matter". However, an important consideration for "what matters" is that it is inherently <a href="https://arxiv.org/pdf/1806.04510.pdf">debatable</a>. We make thousands of decisions each day that influence us in small, but meaningful ways. Your project should hone in one such decision.
+							</p>
+							<p></p>
+
+							<h3>I. Milestone Requirements</h3>
+							<p>
+								This milestone requires that your team successfully identify a problem you have chosen for your project. The requirements of this milestone are as follows:
+								<ol>
+									<li>Your team must have the instructor's permission that a topic is suitable for the course.</li>
+									<li>Your team's setting must be compliant with the constraints (see <i>II. Setting Constraints</i>).</li>
+									<li>Your team must submit a document, by the due date, that includes the following:</li>
+										<ul>
+											<li>A clear articulation of whether you are solving a classification or regression problem.</li>
+											<li>A brief paragraph describing why the problem matters.</li>
+											<li>A statement describing the contributions of each team member.</li>
+										</ul>
+								</ol>
+								<strong>Note:</strong> Your report must be submitted by 11:59pm on October 9 via Canvas.
+							</p>
+							<p></p>
+							
+							<h3>II. Setting Constraints</h3>
+							<p>
+								To guide you in identifying your problem setting, your team's problem must fall into one of the following thematic areas:
+							</p>
+							<div style="border: 2px solid #337ab7; border-radius: 5px;">
+								<ul class="nav nav-pills nav-justified"  style="padding: 5px">
+									<li class="active"><a data-toggle="pill" href="#theme-productivity">Theme I: Productivity</a></li>
+									<li><a data-toggle="pill" href="#theme-wellbeing">Theme II: Wellbeing</a></li>
+									<li><a data-toggle="pill" href="#theme-discourse">Theme III: Discourse</a></li>
+									<li><a data-toggle="pill" href="#theme-covid">Theme IV: COVID-19</a></li>
+								</ul>
+
+								<hr style="margin-top: 0px;margin-bottom: 0px; border: 1px solid #337ab7;"/>
+								
+								<div class="tab-content" style="padding: 10px">
+									<div id="theme-productivity" class="tab-pane fade in active">
+										<h4>Theme I: Machine Learning for Productivity</h4>
+										<p>
+											<p>
+												Productivity is a frontier for learning. Organizations care about maximizing peoples' output when they're on the job. The more people productive or efficient that people are in their job, the closer a company is toward reaching its output goals.
+											</p>
+		
+											<p>
+												Example problems include:
+												<ul>
+													<li>Classifying if a person is in a focused state or not at their computer.</li>
+													<li>Predicting the number of bugs a software engineer will fix today.</li>
+													<li>Classifying "morning people" and "afternoon people" in terms of productivity.</li>
+												</ul>
+											</p>
+
+											<p>
+												<h5>Reference Publications</h5>
+												<ul>
+													<li><a href="https://acw.io/pubs/chi2020-productivity-models.pdf">Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work.</a> CHI 2020.</li>
+													<li><a href="http://library.usc.edu.ph/ACM/CHI2019/1proc/paper467.pdf">Overcoming Distractions during Transitions from Break to Work using a Conversational Website-Blocking System.</a> CHI 2019.</li>
+												</ul>
+											</p>
+										</p>
+									</div>
+									<div id="theme-wellbeing" class="tab-pane fade">
+										<h4>Theme II: Machine Learning for Wellbeing</h4>
+										<p>
+											<p>
+												Research research suggests that productivity is intwertwined with peoples' well-being. Burnout, for example, was recognized as public health epidemic in 2018. Today, we're currently operating in a near-virtual world under the Coronavirus pandemic, which continues to challenges in new and surprising ways. 
+											</p>
+											
+											<p>
+												Example problems include:
+												<ul>
+													<li>Classifying if a person needs to take a break from work.</li>
+													<li>Classifying people between those who needs more sleep and those who don't.</li>
+													<li>Predicting the amount of "unhealthy" time spent on social media.</li>
+												</ul>
+											</p>
+
+											<p>
+												<h5>Reference Publications</h5>
+												<ul>
+													<li><a href="https://www.nature.com/articles/s41746-020-0233-7">Methods in Predictive Techniques for Mental Health Status on Social Media: A Critical Review.</a> Nature, 2020.</li>
+													<li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0223012">Gait can reveal sleep quality with machine learning models.</a> PloS one, 2019.</li>
+												</ul>
+											</p>
+										</p>
+									</div>
+									<div id="theme-discourse" class="tab-pane fade">
+									<h4>Theme III: Machine Learning for Online Discourse</h4>
+									<p>
+										<p>
+											From heated exchanges in political niches to simple disagreements on Facebook updates, online discourse has remained just about anything, but "friendly". Our efforts to have meaningful discourse on the Internet are amplified by third-party actors who leverage the open nature of the Internet to disinform and confuse.
+										</p>
+										
+										<p>
+											Examples problems include:
+											<ul>
+												<li>Classifying online communities (e.g. subreddits) as echo chambers.</li>
+												<li>Classifying online post has harmful to discourse (e.g. trolling, harassment).</li>
+												<li>Classifying fake news on social media websites.</li>
+											</ul>
+										</p>
+
+										<p>
+											<h5>Reference Publications</h5>
+											<ul>
+												<li><a href="https://www.aaai.org/ojs/index.php/ICWSM/article/view/3221">Detecting Potential Warning Behaviors of Ideological Radicalization in an Alt-Right Subreddit.</a> ICWSM, 2019.</li>
+												<li><a href="https://nlp.stanford.edu/~muzny/docs/smp-iscram2012.pdf">Learning from the Crowd: Collaborative Filtering Techniques for Identifying On-the-Ground Twitterers during Mass Disruptions.</a> ISCRAM, 2012.</li>
+											</ul>
+										</p>
+									</p>
+									</div>
+									<div id="theme-covid" class="tab-pane fade">
+									<h4>Theme IV: Machine Learning for COVID-19</h4>
+									<p>
+										<p>
+											The Coronavirus pandemic has forced us to adapt to new learning, working, and personal environments in ways the world's population was not prepared for. In what ways can machine learning help us navigate a world where we, or those around us, need to feel safe? 
+										</p>
+	
+										<p>
+											Example problems include:
+											<ul>
+												<li>Classifying physical locations as low-risk/high-risk for COVID-19 exposure across TN.</li>
+												<li>Classifying health-related misinformation in Wikipedia Edits.</li>
+												<li>Predicting the number of mask-wearers in local grocery stores.</li>
+											</ul>
+										</p>
+
+										<p>
+											<h5>Reference Publications</h5>
+											<ul>
+												<li><a href="https://journals.physiology.org/doi/full/10.1152/physiolgenomics.00029.2020">Artificial Intelligence and Machine Learning to fight COVID-19.</a> Physiological Genomics, 2020.</li>
+												<li><a href="https://arxiv.org/pdf/2006.04816">A Tale of Two Communities: Characterizing Reddit Response to COVID-19 through /r/China_Flu and /r/Coronavirus.</a> <i>Under review</i>.</li>
+											</ul>
+										</p>
+									</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="milestone2" class="tab-pane fade">
+							<p></p>
+							<p>
+								The objective of the Milestone 2 (M2) is designing and building a dataset for machine learning. Datasets are composed of two components: (1) a series of features and (2) a target labels. For the purposes of our course, a "good" dataset is one that includes a comreprehensive feature set that will allow you to explore how both how independent features and combinations of features yield more performant learning outcomes.
+							</p>
+							<p></p>
+
+							<h3>I. Milestone Requirements</h3>
+							<p>
+								The requirements of this milestone are as follows:
+								<ol>
+									<li>Your team's setting must be compliant with the constraints (see <i>III. Dataset Constraints</i>).</li>
+									<li>Your team must submit a document, by the due date, that includes the following:</li>
+										<ul>
+											<li>A clear articulation of whether your team is creating a dataset or using an existing dataset.</li>
+											<ul>
+												<li><strong>For both cases:</strong> You must include additional information outlined in the <i>III. Dataset Constraints</i> section.</li>
+											</ul>
+											<li>A statement describing the contributions of each team member.</li>
+										</ul>
+									<li>Your team must submit your project's dataset file (i.e. in CSV format).</li>
+								</ol>
+
+								<strong>Note:</strong> Your report must be submitted by 11:59pm on October 30 via Canvas.
+
+								<h3>II. Grading</h3>
+								This milestone is worth 30% of your final project grade. The 30% is calculated like so:
+								<table class="table text-left">
+									<tr><td>Deliverable</td><td>Description</td><td>Value</td></tr>
+									<tr class="new-week">
+										<td>Document</td><td>Document file exists.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Dataset information supplied.</td><td>10%</td>
+									</tr>
+									<tr>
+										<td>Data Collection</td><td>Dataset file exists.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>File columns map to feature labels and output label.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Number of examples is an appropriate size.</td><td>5%</td>
+									</tr>
+								</table>
+							</p>
+							<p></p>
+							
+							<h3>II. Dataset Constraints</h3>
+							<p>
+								You have two options for satisyfing this milestone. You can either (1) Create a Dataset or (2) Use an Existing Dataset. In many cases, your problem setting will make this choice for you. For example, if you're focusing on classifying physical locations as high-risk for COVID-19 exposure, it makes sense to use a dataset collected through more reliable means than our own. In contrast, if you're classifying posts on Reddit as toxic or not, you will likely have to create your own dataset as the public datasets are generally unavailable for such a problem.<br/><br/>
+
+								Click below to see the guidelines for each option:
+								<div style="border: 2px solid #337ab7; border-radius: 5px;">
+									<ul class="nav nav-pills nav-justified"  style="padding: 5px">
+										<li class="active"><a data-toggle="pill" href="#new-dataset">Option I: Creating a Dataset</a></li>
+										<li><a data-toggle="pill" href="#existing-dataset">Option II: Using an Existing Dataset</a></li>
+									</ul>
+	
+									<hr style="margin-top: 0px;margin-bottom: 0px; border: 1px solid #337ab7;"/>
+									
+									<div class="tab-content" style="padding: 10px">
+										<div id="new-dataset" class="tab-pane fade in active">
+											<p>
+												<p>
+													Dataset creation involves three sub-tasks: (1) designing your feature set from the ground-up, (2) mapping features to target labels, and (3) collecting data. 
+												</p>
+			
+												<p>
+													<strong>Task I. Designing a Feature Set</strong>
+													<p>
+														Your feature set serves as a defined list of features that will be used in your learning algorithm for your problem setting. It is your team's responsibility to design this feature set. Your team should address the question: <i>"What information is most useful for helping my algorithm predict accurately?"</i>. For example, in the case of classifying COVID-related misinformation on Reddit, you might say the following features would be most useful:
+
+														<table class="table table-striped">
+															<thead>
+															  <tr>
+																<th scope="col">Feature</th>
+																<th scope="col">Description</th>
+															  </tr>
+															</thead>
+															<tbody>
+															  <tr>
+																<td>isScientist</td>
+																<td>a binary variable indicating the user is a scientist</td>
+															  </tr>
+															  <tr>
+																<td>visitsToCDC</td>
+																<td>a continuous variable indicating the # of visits to the CDC website</td>
+															  </tr>
+															  <tr>
+																<td>postsInChinaFlu</td>
+																<td>a binary variable indicating the user posts in /r/ChinaFlu</td>
+															  </tr>
+															</tbody>
+														  </table>
+														
+														In creating a dataset, you should be creative. There are no constraints about the number or type of features that you can include in your dataset. It may very well be that you build a model that makes use of a subset of the dataset that you collect. Once datasets are collected, it is easy to exclude features. In contrast, it is not easy to add new features after you've collected data.
+													</p>
+												</p>
+
+												<p>
+													<strong>Task II. Collecting Data</strong>
+													<p>
+														After you've designed your dataset, you should now seek to develop a mechnism by which you can collect it. In practice, the quality of data is paramount. If your data isn't reliable, you're not going to be able to utilize it in any practical machine learning scenario. For the purposes of our course, we are less concerned with quality of data and more concerned with the presence of a dataset. <br/><br/>
+													
+														There are several ways that you can go about collecting data:
+														<ol>
+															<li><strong>Traditional / Manual Methods</strong></li>
+															<ul>
+																<li><i>By-Hand</i>: All features are collected by hand / manually.</li>
+																<li><i>Observation</i>: Record events (e.g. in a spreadsheet) as they happen.</li>
+																<li><i>Survey</i>: Web tools, e.g. <a href="https://oit.utk.edu/research/websurveys/">QuestionPro</a>, or <a href="https://forms.google.com/">Google Forms</a>.</li>
+															</ul>
+															<li><strong>Automated Methods</strong></li>
+															<ul>
+																<li><i>Activity Logger:</i> Tools to track activity on computers. Examples include <a href="https://kidlogger.net">KidLogger</a> or <a href="https://www.rescuetime.com">RescueTime</a>. </li>
+																<li><i></i>Web Scraper:</i> Tools to extract information from the web. In Python, you can use <a href="https://www.learndatasci.com/tutorials/ultimate-guide-web-scraping-w-python-requests-and-beautifulsoup/">BeautifulSoup</a> to scrape information.</li>
+															</ul>
+														</ol>
+
+
+														Once data is collected, you should have a dataset of examples with populated columns for each feature. For example, continuing the example outlined above, I might say that I've collected a dataset of 400 examples with populated features that looks like the following:
+														<table class="table table-striped table-bordered">
+															<thead>
+																<tr>
+																<th scope="col">ExampleID</th>
+																<th scope="col">isScientist</th>
+																<th scope="col">visitsToCDC</th>
+																<th scope="col">postsInChinaFlu</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>1</td>
+																	<td>14</td>
+																	<td>0</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>1</td>
+																	<td>64</td>
+																	<td>1</td>
+																</tr>
+																<tr>
+																	<td>...</td>
+																	<td>...</td>
+																	<td>...</td>
+																	<td>...</td>
+																</tr>
+																<tr>
+																	<td>399</td>
+																	<td>0</td>
+																	<td>14</td>
+																	<td>0</td>
+																</tr>
+																<tr>
+																	<td>400</td>
+																	<td>1</td>
+																	<td>3</td>
+																	<td>0</td>
+																</tr>
+															</tbody>
+														</table>
+
+														An important characteristic to note is that the information in this table could have been collected through any of the traditional or automated methods outlined above. Some of them, however, may be more reliable than others. You should aim to include at least a few hundred training examples. In the event you're concerned about reaching this number, consult Dr. Williams for advice.
+													</p>
+												</p>
+
+												<p>
+													<strong>Task III. Mapping Features to Target Labels</strong>
+													<p>
+														Your collected data must be mapped to a target label in order to be utilized in the learning algorithms we've discussed thus far. Here, your ultimate goal is to populate the target class label / outcome column in your dataset. Continuing our running example, we've added an additional column into our dataset that is our "isReliable" label.
+														<table class="table table-striped table-bordered">
+															<thead>
+																<tr>
+																<th scope="col">ExampleID</th>
+																<th scope="col">isScientist</th>
+																<th scope="col">visitsToCDC</th>
+																<th scope="col">postsInChinaFlu</th>
+																<th scope="col">isReliable</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>1</td>
+																	<td>14</td>
+																	<td>0</td>
+																	<td>0</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>1</td>
+																	<td>64</td>
+																	<td>1</td>
+																	<td>1</td>
+																</tr>
+																<tr>
+																	<td>...</td>
+																	<td>...</td>
+																	<td>...</td>
+																	<td>...</td>
+																	<td>...</td>
+																</tr>
+																<tr>
+																	<td>399</td>
+																	<td>0</td>
+																	<td>14</td>
+																	<td>0</td>
+																	<td>1</td>
+																</tr>
+																<tr>
+																	<td>400</td>
+																	<td>1</td>
+																	<td>3</td>
+																	<td>0</td>
+																	<td>1</td>
+																</tr>
+															</tbody>
+														</table>
+													</p>
+
+													Most cases require that you (i.e. your Team) will need to manually assign a target label to each example (i.e., "isReliable" being 0 or 1). To ensure that the manual labeling process is unbiased, it is common practice for two people to label the same subset of examples. If you engage in manual labeling, you should randomly pick 20% of your examples and have two members of your team separately label the examples. Afterwards, you should report the <a href="https://en.wikipedia.org/wiki/Cohen%27s_kappa#Simple_example">Cohen's kappa score</a>, which indicates how well the two labelers agreed with one another.
+												</p>
+	
+												<p>
+													<strong>Requirements for the Milestone II Document</strong>
+													<p> In your Milestone II document, you should articulate the following:
+													<ul>
+														<li><strong>Your Feature Set:</strong> A table that outlines the names and descriptions of your features.</li>
+														<li><strong>Your Data Collection Method:</strong> A description of your data collection method with a brief commentary on the strengths and benefits of the method as it relates to your problem setting.</li>
+														<li><strong>Your Mapping Procedure:</strong> A description of your procedure for mapping features to target labels. If manual labeling was used, you should report the Cohen's kappa score of your labelers.</li>
+													</ul>
+													</p>
+												</p>
+											</p>
+										</div>
+										<div id="existing-dataset" class="tab-pane fade">
+											<p>
+												<p>
+													Using an existing dataset allows you to ignore the challenges that come with collecting data. However, it's rare that existing datasets meet the exact needs of a new project. If you you chooce to use an existing dataset, you therefore have three sub-tasks to under-go.
+												</p>
+												
+												<p>
+													<strong>Task I. Identifying a Dataset</strong>
+													Finding a dataset that maps to your problem setting is challenging. There are several reliable sources for datasets including the <a href="http://archive.ics.uci.edu/ml/index.php">UCI Machine Learning repository</a>, <a href="https://guides.library.cmu.edu/machine-learning/datasets">CMU Machine Learning library</a>, and <a href="https://www.kaggle.com/datasets">Kaggle</a>. There are a myriad of <a href="https://medium.com/towards-artificial-intelligence/best-datasets-for-machine-learning-data-science-computer-vision-nlp-ai-c9541058cf4f">Medium articles</a> that yield comprehensive lists of publicly available datasets.
+												</p>
+
+												<p>
+													<strong>Task II. Evaluating Dataset Reliability </strong>
+													Datasets are often collected with a particular purpose or goal in mind. In instances of re-use, datasets can rarely be used out-of-the-box toward a different goal. Unlike the task of collecting data, you are required to evaluate the reliability of the data toward your problem setting. You should include a paragraph in your document that describes why you believe the dataset to be reliable for the purposes of your project. <br/><br/>
+													
+													Here, "reliable" refers to data that was collected accurately. Perhaps, this means that the data was used in prior research or machine learning models. Perhaps, you believe that the method of collection is the most reliable pathway for collecting such data. Perhaps, it was collected from a particular organization or entity that you trust. For example, if you're dealing with a dataset on the spread of COVID-19, you may have stronger faith in data collection methods that occured in a particular region of the country. Regardless of your problem setting or dataset, your paragraph should make a case for the reliability of your data. Your paragraph should also give particular attention to what you believe the dataset's limitations to be.
+												</p>
+
+												<p>
+													<strong>Task III. Augment the Dataset (If Needed)</strong>
+													Datasets are often collected with a particular purpose or goal in mind. In instances of re-use, datasets can rarely be used out-of-the-box toward a different goal. You should give attention to understanding ways in which you expand the dataset's feature set toward your project's setting, assuming that the project settings are non-identical. <br/><br/>
+
+													If the dataset needs to be augmented or extended (e.g. with new features), you should develop an approach to do see this to completion. By the end of this task, the dataset should include a complete feature set that map to target labels.
+												</p>
+	
+												<p>
+													<strong>Requirements for the Milestone II Document</strong>
+													<p> In your Milestone II document, you should articulate the following:
+													<ul>
+														<li><strong>Your Dataset:</strong> A table that outlines the names and descriptions of the features in the dataset you are re-using.</li>
+														<li><strong>Your Evaluation of the Dataset:</strong> A paragraph that argues for the appropriateness of the dataset for use in your project, giving particular attention to why you believe the dataset to be reliable. Dataset limitations should be articulated.</li>
+														<li><strong>Your Augmentation Approach:</strong> A description of how you plan to augment your dataset, should you need to. Include a table that outlines the names and descriptions of the features you want to add to the dataset.</li>
+													</ul>
+													</p>
+												</p>
+											</p>
+										</div>
+									</div>
+								</div>
+							</p>
+						</div>
+						<div id="milestone3" class="tab-pane fade">
+							<p></p>
+							<p>
+								The objective of the Milestone 3 (M3) is implementing and evaluating a learning algorithm for your problem setting. There are no constraints about the methods or tools that you can utilize toward your problem. The only technical constraint for M3 is that your implementations be completed in Python.
+							</p>
+							<p></p>
+
+							<h3>I. Milestone Requirements</h3>
+							<p>
+								The requirements of this milestone are as follows:
+								<ol>
+									<li>Your team must submit a ZIP file, by the due date, that includes the following:</li>
+										<ul>
+											<li>A document that presents your learning algorithms and their evaluation.</li>
+											<ul>
+												<li>You should describe at least one equation related to each learning algorithm.</li>
+												<li>You should describe each algorithm's implementation, e.g. libraries used.</li>
+												<li>You should describe the evaluation method for each learning algorithm.</li>
+												<ul>
+													<li>Provide as much detail as possible to demonstrate that your evaluation was comprehensive and conducted reliably.</li>
+													<li>Explore your data before applying or choosing an approach. Report what you find and how it might guide your learning approach.</li>
+													<li>Support your evaluation with visual aids (e.g., plots) where appropriate. Articulate what your plots suggest.</li>
+												</ul>
+											</ul>
+											<li>The source code / relevant files for your implementation and evaluation.</li>
+											<li>A statement describing the contributions of each team member.</li>
+										</ul>
+								</ol>
+
+								<strong>Note:</strong> Your report must be submitted by 11:59pm on November 20 via Canvas.
+
+								<h3>II. Grading</h3>
+								This milestone is worth 30% of your final project grade. The 30% is calculated like so:
+								<table class="table text-left">
+									<tr><td>Deliverable</td><td>Description</td><td>Value</td></tr>
+									<tr class="new-week">
+										<td>Source Code</td><td>Source files exists and can be executed.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Sources files include at least two algorithm implementations.</td><td>5%</td>
+									</tr>
+									<tr>
+										<td>Approach</td><td>Selected approaches are justified and appropriately used.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Math + Implementation is clearly presented.</td><td>5%</td>
+									</tr>
+									<tr>
+										<td>Evaluation</td><td>Evaluation is thorough for two or more approaches.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Evaluation is clearly presented.</td><td>5%</td>
+									</tr>
+								</table>
+							</p>
+							<p></p>
+						</div>
+						<div id="milestone4" class="tab-pane fade">
+							<p></p>
+							<p>
+								The objective of the Milestone 4 (M4) is writing-up your findings in a formal document and presenting your findings to the class. Your docment should be written with the <a href="https://www.aaai.org/Publications/Templates/AuthorKit20.zip">AAAI 2020 Author Kit</a>. It is advisable that your team write in LaTeX. The easiest way to collaborate on LaTeX documents is through <a href="https://www.overleaf.com">Overleaf</a>.
+							</p>
+							<p></p>
+
+							<h3>I. Milestone Requirements</h3>
+							<p>
+								The requirements of this milestone are as follows:
+								<ol>
+									<li><strong>Final Report:</strong> Your team must submit a document in the AAAI format, by the due date, that includes the following:</li>
+										<ul>
+											<li>Your document should include six sections:</li>
+											<ul>
+												<li>Introduction: Describe why your project matters.</li>
+												<li>Dataset: Describe your dataset, e.g. features and output label</li>
+												<li>Approach: Describe your approach.</li>
+												<li>Evaluation: Describe your evaluation.</li>
+												<li>Future Work: Describe what could follow your work.</li>
+												<li>Contributions: Describe the contributions of each team member.</li>
+											</ul>
+										</ul>
+
+									
+									<li><strong>Final Presentation:</strong> During our alotted final exam period (December 4th @ 10:30am - 12:45pm), you will present your work. Your team must prepare a 5-minute presentation. You will be given a one minute Q&A. The presentation must include the following six slides:</li>
+										<ul>
+											<li>Slide 1: State your project's title and your team members.</li>
+											<li>Slide 2: Describe your problem setting.</li>
+											<li>Slide 3: Describe your dataset, e.g. features and output label.</li>
+											<li>Slide 4: Describe your approaches.</li>
+											<li>Slide 5: Describe your evaluation and what you observed.</li>
+											<li>Slide 6: Describe what work could follow your findings.</li>
+											<ul>
+												<li>You can use Slide 6 to describe other important aspects tied to your project, such as ethics, interpretability, trust, etc, that you wish you could've explored.</li>
+											</ul>
+										</ul>
+
+						
+								</ol>
+
+								<strong>Note:</strong> Your report must be submitted by 11:59pm on December 4 via Canvas. Note that it is perfectly permissible to re-use text from prior Milestone submissions for this final report. You should aim to submit a report that is well-written and clearly articulates all aspects of your team's work.
+
+								<br/><br/>
+								You may also be interested in several resources, such as:
+								<ul>
+									<li><a href="https://www.tablesgenerator.com">ShareLaTeX's Table Generator</a></li>
+									<li>Overleaf's <a href="https://www.overleaf.com/learn/latex/LaTeX_tools">LaTeX Tools</a> list</li>
+								</ul>
+
+								<h3>II. Grading</h3>
+								This milestone is worth 30% of your final project grade. The 30% is calculated like so:
+								<table class="table text-left">
+									<tr><td>Deliverable</td><td>Description</td><td>Value</td></tr>
+									<tr class="new-week">
+										<td>Final Report</td><td>A written report exists with all required information.</td><td>5%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Report is grammatically and structurally well-written.</td><td>10%</td>
+									</tr>
+									<tr>
+										<td>Presentation</td><td>Presentation articulates all aspects of project effectively.</td><td>10%</td>
+									</tr>
+									<tr class="related">
+										<td></td><td>Team addresses questions during Q&A session successfully.</td><td>5%</td>
+									</tr>
+								</table>
+							</p>
+							<p></p>
+						</div>
+					</div>
+			</div>		
+		</div>
+	</body>
+</html>
