@@ -132,6 +132,7 @@ h1 {
 
 .team-prj-banner {
 	border: 1px solid black;
+	max-width: 100%;
 }
 
 .nav.nav-tabs > li.disabled {     pointer-events: none;     a {         color: silver;     } }
