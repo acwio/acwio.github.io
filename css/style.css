@@ -70,9 +70,9 @@ img {
 }
 #right{
 	float:right;
-	width:35%;
+	width:30%;
 	margin:auto 2% auto auto;
-	padding-left:100px;
+	padding-left:60px;
 	line-height: 135%;
 	overflow:hidden
 }
@@ -145,4 +145,8 @@ a.teach-link:hover {text-decoration: none; color: #a2a19f;}
 .class-list {
 	padding: revert !important;
     list-style: circle !important;
+}
+
+#home-img {
+    border: 1px solid black;
 }
