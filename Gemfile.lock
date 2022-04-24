@@ -210,7 +210,6 @@ GEM
       jekyll-seo-tag (~> 2.0)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
-    jekyll-twitter-plugin (2.1.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.12.0)
@@ -270,16 +269,13 @@ GEM
       unf_ext
     unf_ext (0.0.8.1)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
     zeitwerk (2.5.4)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   github-pages
-  jekyll-twitter-plugin
-  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.6
+   2.1.2
