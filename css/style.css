@@ -85,6 +85,16 @@ img {
 	margin:auto;
 	overflow:hidden
 }
+
+#middle-pubs {
+	width: 700px;
+	position:relative;
+	left:10;
+	right:0;
+	line-height: 150%;;
+	overflow:hidden
+}
+
 #footer{
 	width:100%;
 	min-width:960px;
@@ -149,4 +159,40 @@ a.teach-link:hover {text-decoration: none; color: #a2a19f;}
 
 #home-img {
     border: 1px solid black;
+}
+
+.publication-list {
+    font-size: 80%;
+}
+.publication-list .title span { font-weight: bold; font-style: italic;}
+.publication-list .lab-member {
+        color: #444;
+        text-decoration: underline;
+    }
+
+table.publication-list {
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+table.publication-list h2 { margin-top: 16px; font-size: 18pt; }
+table.publication-list th, td { padding-right: 16px; }
+table.publication-list td.venue div { text-align: right; }
+
+ul.publication-list {
+	list-style: none;
+    padding-left: 0;
+
+}
+ul.publication-list a.title { color: inherit; }
+
+ul.publication-list li {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+ul.publication-list li:last-child { margin-bottom: 0; }
+
+.col-body h3 {
+	font-size: 18pt;
+	margin-bottom: 10px;
 }

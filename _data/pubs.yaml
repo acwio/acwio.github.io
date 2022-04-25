@@ -1,0 +1,216 @@
+# 2022
+
+- title: "Mobilizing Crowdwork: A Systematic Assessment of the Mobile Usability of HITs"
+  publisher: "ACM Digital Library"
+  author: "Senjuti Dutta, Rhema Linder, Doug Lowe, Richard Rosenbalm, Anastasia Kuzminykh, and Alex C. Williams"
+  venue: "ACM CHI"
+  year: "2022"
+  link: "https://acwio.github.io/pubs/chi2022-mobile-hit-usability.pdf"
+  link_publisher: "#"
+
+- title: "“I Didn’t Know I Looked Angry”: Characterizing Observed Emotion and Reported Affect at Work"
+  publisher: "ACM Digital Library"
+  author: "Harmanpreet Kaur, Daniel McDuff, Alex C. Williams, Jaime Teevan, and Shamsi T. Iqbal"
+  venue: "ACM CHI"
+  year: "2022"
+  link: "http://www-personal.umich.edu/~harmank/Papers/CHI2022_Emotion_Recognition.pdf"
+  link_publisher: "#"
+
+
+
+# 2021
+- title: "Exploring Learning Approaches for Ancient Greek Character Recognition with Citizen Science Data"
+  publisher: "IEEE"
+  author: "Matthew I. Swindall, Gregory Croisdale, Chase C. Hunter, Ben Keener, Alex C. Williams, James H. Brusuelas, Nita Krevans, Melissa Sellew, Lucy Fortson, and John F. Wallin"
+  venue: "IEEE eScience"
+  year: "2021"
+  link: "https://acwio.github.io/pubs/escience2021-AncientLivesModels.pdf"
+
+- title: "Classifying Reasonability in Retellings of Personal Events Shared on Social Media: A Preliminary Case Study with /r/AmITheAsshole"
+  publisher: "AAAI Digital Library"
+  author: "Ethan Haworth, Ted Grover, Justin Langston, Ankush Patel, Joseph West, and Alex C. Williams"
+  venue: "AAAI ICWSM"
+  year: "2021"
+  link: "https://acwio.github.io/pubs/icwsm2021-AITA.pdf"
+
+- title: "Firefox Voice: An Open and Extensible Voice Assistant Built Upon the Web"
+  publisher: "ACM Digital Library"
+  author: "Julia Cambre, Alex C. Williams, Afsaneh Razi, Ian Bicking, Abraham Wallin, Janice Tsai, Chinmay Kulkarni, and Jofish Kaye"
+  venue: "ACM CHI"
+  year: "2021"
+  link: "https://juliacambre.com/CHI_2021__Firefox_Voice.pdf"
+  link_publisher: "https://juliacambre.com/CHI_2021__Firefox_Voice.pdf"
+
+- title: "Characterizing Work-Life for Information Work on Mars: A Design Fiction for the New Future of Work on Earth"
+  publisher: "ACM Digital Library"
+  author: "Rhema Linder, Chase Hunter, Jacob McLemore, Senjuti Dutta, Fatema Akbar, Ted Grover, Thomas Breidebad, Judith W. Borghouts, Yuwen Lu, Gloria Mark, Austin Z. Henley, Alex C. Williams"
+  venue: "ACM GROUP"
+  year: "2021"
+  link: "https://acwio.github.io/pubs/group2021-work-life-mars.pdf"
+  link_publisher: "https://dl.acm.org/doi/abs/10.1145/3492859"
+
+
+# 2020
+- title: "Toward Voice-Assisted Browsers: A Preliminary Study with Firefox Voice"
+  publisher: "ACM Digital Library"
+  author: "Alex C. Williams, Julia Cambre, Ian Bicking, Abraham Wallin, Janice Tsai, and Jofish Kaye"
+  venue: "ACM CUI"
+  year: "2020"
+  link: "https://acwio.github.io/pubs/cui2020-ffvoice.pdf"
+  link_publisher: "https://dl.acm.org/doi/10.1145/3405755.3406154?cid=81100005698"
+
+- title: "Managing Tasks Across the Work-Life Boundary: Opportunities, Challenges, and Directions. "
+  publisher: "Microsoft"
+  author: "Alex C. Williams, Shamsi T. Iqbal, Julia Kiseleva, and Ryen W. White"
+  venue: "NFW"
+  year: "2020"
+  link: "https://acwio.github.io/pubs/nfw2020-task-management-boundaries.pdf"
+  link_publisher: "https://www.microsoft.com/en-us/research/event/new-future-of-work/"
+  media: {"Video": "https://www.youtube.com/watch?v=3hteN16Hy-0"}
+
+- title: "Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work"
+  publisher: "ACM Digital Library"
+  author: "Harmanpreet Kaur, Alex C. Williams, Daniel McDuff, Mary Czerwinski, Jaime Teevan, and Shamsi T. Iqbal"
+  venue: "ACM CHI"
+  year: "2020"
+  link: "https://acwio.github.io/pubs/chi2020-productivity-models.pdf"
+  link_publisher: "https://dl.acm.org/doi/abs/10.1145/3313831.3376817"
+
+# 2019
+
+- title: "Mercury: Empowering Programmers' Mobile Work Practices with Microproductivity"
+  publisher: "ACM Digital Library"
+  year: "2019"
+  author: "Alex Williams, Harmanpreet Kaur, Jaime Teevan, Ryen White, Shamsi T. Iqbal, and Adam Fourney"
+  link: "https://acwio.github.io/pubs/uist2019-mercury.pdf"
+  link_publisher: "https://doi.org/10.1145/3332165.3347932"
+  venue: "ACM UIST"
+  media: {"Video": "https://www.youtube.com/watch?v=Urh-TQk4ebQ"}
+
+- title: "The Perpetual Work Life of Crowdworkers: How Tooling Practices Increase Fragmentation in Crowdwork"
+  publisher: "ACM Digital Library"
+  year: "2019"
+  author: "Alex C. Williams, Gloria Mark, Kristy Milland, Edward Lank, and Edith Law"
+  link: "https://acwio.github.io/pubs/cscw2019-tooling-practices.pdf"
+  link_publisher: "https://doi.org/10.1145/3359126"
+  venue: "ACM CSCW"
+  media: {}
+
+  # 2018
+- title: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning."
+  publisher: "ACM Digital Library"
+  year: "2018"
+  author: "Harmanpreet Kaur, Alex C. Williams, Anne Loomis-Thompson, Walter Lasecki, Shamsi T. Iqbal, and Jaime Teevan"
+  link: "https://www.microsoft.com/en-us/research/uploads/prod/2018/10/action-plans.pdf"
+  link_publisher: "https://dl.acm.org/doi/10.1145/3274355"
+  venue: "ACM CSCW"
+  media: {}
+
+- title: "Supporting Workplace Detachment and Reattachment with Conversational Intelligence"
+  publisher: "ACM Digital Library"
+  year: "2018"
+  author: "Alex C. Williams, Harmanpreet Kaur, Gloria Mark, Anne Loomis-Thompson, Shamsi T. Iqbal, and Jaime Teevan"
+  link: "https://acwio.github.io/pubs/chi2018-switchbot.pdf"
+  link_publisher: "https://dl.acm.org/doi/abs/10.1145/3173574.3173662"
+  venue: "ACM CHI"
+  media: {}
+
+  # 2017
+
+- title: "Deja Vu: Characterizing Worker Reliability Using Task Consistency"
+  year: "2017"
+  author: "Alex C. Williams, Joslin Goh, Charlie G. Willis, Aaron M. Ellison, James H. Brusuelas, Charles C. Davis, and Edith Law"
+  publisher: "AAAI Digital Library"
+  link: "https://acwio.github.io/pubs/hcomp2017-dejavu.pdf"
+  link_publisher: "https://aaai.org/ocs/index.php/HCOMP/HCOMP17/paper/view/15929/15277"
+  venue: "AAAI HCOMP"
+  media: {}
+
+- title: "Seeing Sound: Investigating the Effects of Visualizations and Complexity on Crowdsourced Audio Annotations"
+  publisher: "ACM Digital Library"
+  link_publisher: "https://dl.acm.org/doi/abs/10.1145/3134664"
+  link: "https://markcartwright.com/files/cartwright2017seeing.pdf"
+  author: "Mark Cartwright, Ayanna Seals, Justin Salamon, A.C. Williams, Stephanie Mikloska, David MacConnell, Edith Law, Juan P. Bello, and Oded Nov"
+  venue: "ACM CSCW"
+  year: "2017"
+  media: {}
+
+
+# 2016
+
+- title: "Crowdsourcing as a Tool for Research: Implications of Uncertainty"
+  publisher: "ACM Digital Library"
+  link: "https://dl.acm.org/citation.cfm?id=2998197"
+  link_publisher: "https://dl.acm.org/citation.cfm?id=2998197"
+  author: "Edith Law, Krzysztof Z. Gajos, Andrea Wiggins, Mary Gray, and Alex Williams"
+  venue: "ACM CSCW"
+  year: "2016"
+  media: {}
+
+# 2015
+- title: "Proteus: A Platform for Born Digital Critical Editions of Literary and Subliterary Papyri"
+  publisher: "IEEE Digital Library"
+  link: "https://acwio.github.io/pubs/dh2015.pdf"
+  link_publisher: "https://ieeexplore.ieee.org/document/7419546"
+  author: "Alex C. Williams, Annapaola Santarsiero, Chiara Meccariello, Gertjan Verhasselt, Hyrum D. Carroll, John F. Wallin, Dirk Obbink, and James H. Brusuelas"
+  venue: "IEEE Digital Heritage"
+  primary_area: "Digital Humanities"
+  year: "2015"
+  media: {}
+
+# 2014
+- title: "Identification of Ancient Greek Papyrus Fragments Using Genetic Sequence Alignment Algorithms"
+  publisher: "IEEE Digital Library"
+  link: "https://acwio.github.io/pubs/escience2014.pdf"
+  link_publisher: "https://ieeexplore.ieee.org/document/6972089"
+  author: "Alex C. Williams, Hyrum D. Carroll, John F. Wallin, James H. Brusuelas, Lucy Fortson, Anne-Francoise Lamblin, and Haoyu Yu"
+  venue: "IEEE eScience"
+  primary_area: "Digital Humanities"
+  year: "2014"
+  media: {}
+
+- title: "A Computational Pipeline for Crowdsourced Transcriptions of Ancient Greek Papyrus Fragments"
+  publisher: "IEEE Digital Library"
+  link: "https://acwio.github.io/pubs/bhd2014.pdf"
+  link_publisher: "https://ieeexplore.ieee.org/document/6940294"
+  author: "Alex C. Williams, John F. Wallin, Haoyu Yu, Marco Perale, Hyrum D. Carroll, Anne-Francoise Lamblin, Lucy Fortson, Dirk Obbink, Chris J. Lintott, and James H. Brusuelas"
+  venue: "IEEE BigData"
+  primary_area: "Digital Humanities"
+  year: "2014"
+  media: {}
+
+- title: "Improving retrieval efficacy in homology search using the false discovery rate"
+  publisher: "IEEE Digital Library"
+  link: "https://acwio.github.io/pubs/tcbb2014.pdf"
+  link_publisher: "https://ieeexplore.ieee.org/document/6940294"
+  author: "Hyrum D. Carroll, Alex C. Williams, Anthony G. Davis, and John L. Spouge"
+  venue: "ACM/IEEE TCBB"
+  venue_full: "ACM/IEEE Transactions on Computational Biology and Bioinformatics"
+  primary_area: "Bioinformatics"
+  year: "2014"
+  media: {}
+
+  # 2013
+
+- title: "False Discovery Rate for Homology Searches"
+  publisher: "Springer"
+  link_publisher: "https://link.springer.com/chapter/10.1007/978-3-319-02624-4_18"
+  link: "https://acwio.github.io/pubs/bsb2013.pdf"
+  author: "Hyrum D. Carroll, Alex C. Williams, Anthony G. Davis, and John L. Spouge"
+  venue: "BSB"
+  venue_full: "Brazilian Symposium on Bioinformatics"
+  primary_area: "Bioinformatics"
+  year: "2013"
+  media: {}
+
+
+- title: "Automated assessment of bilateral breast volume asymmetry as a breast cancer biomarker during mammographic screening."
+  publisher: "IEEE Digital Library"
+  link_publisher: "https://ieeexplore.ieee.org/document/6940294"
+  link: "https://acwio.github.io/pubs/spie2013.pdf"
+  author: "Alex C. Williams, Austin Hitt, Sophie Voisin, and Georgia Tourassi"
+  venue: "SPIE Medical Imaging"
+  venue_full: "SPIE Medical Imaging: Computer-Aided Diagnosis 2013"
+  primary_area: "Computer-Aided Diagnosis"
+  year: "2013"
+  media: {}

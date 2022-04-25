@@ -57,11 +57,69 @@ layout: default
     <div class="tab-pane" id="research">
         <div id="right">
         </div>
-        <div id="middle">
+        <div id="middle-pubs">
             <div class="col-body">
+                <h3>Research Overview</h3>
+                <p class="col-text"> My research focuses on designing novel intelligent and interactive systems and understanding how they affect or support human attention. My work is regularly published at premier publication venues for HCI research (e.g., CHI, CSCW, UIST) alongside other venues that welcome interdisciplinary contributions (e.g., applications of computing to the humanities).</p>
+
+                <!-- <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
+
+                <p class="col-text">Visualization here.</p> -->
+                
                 <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
-                <!-- <p class="col-text"> My research focuses on understanding new interactive systems that guide human attention in every-day work and life. As my researcher, my work is often published at premier venues that intersect the areas of human-computer interaction (HCI), computer-supported cooperative work (CSCW), and artificial intelligence (AI). I also collaborate in other domains of personal interest (e.g., applications of computing to the humanities). </p> -->
-                <p class="col-text">Under construction.</p>
+
+                {% assign pubsByYear = site.data.pubs | group_by: "year" | sort: "name" | reverse %}
+                {% assign people = site.data.people %}
+
+                <div class="publications">
+                    <table class="publication-list">
+                    {% for pubYearGroup in pubsByYear %}
+
+                        <tr>
+                        <td colspan="2">
+                            <h2>{{ pubYearGroup.items.first.year }}</h2>
+                        </td>
+                        </tr>
+                        {% assign pubYearGroupSorted = pubYearGroup.items | sort: "venue" %}
+                        {% for pub in pubYearGroupSorted %}
+                        <tr>
+                            <td class="venue"><div>{{ pub.venue }}</div></td>
+                            <td>
+                            {% assign authorList = pub.author %}
+                            {% assign authors = pub.author | replace: " and ", "," | split: "," %}
+
+                            {% for authorFullName in authors %}
+                                {% assign authorCleanFullName = authorFullName | strip %}
+                                {% if authorCleanFullName != "" %}
+                                {% assign authorNames = authorCleanFullName | split: " " %}
+                                {% assign authorDetails = people | where: "firstname", authorNames.first | where: "lastname", authorNames.last | first %}
+                                {% if authorDetails %}
+                                    {% capture authorDecorated %}<span class='lab-member'>{{authorCleanFullName}}</span>{% endcapture %}
+                                    {% if authorDetails.website != "" %}
+                                    {% capture authorDecorated %}<a href='{{ authorDetails.website }}'>{{authorDecorated}}</a>{% endcapture %}
+                                    {% endif %}
+                                    {% assign authorList = authorList | replace: authorCleanFullName, authorDecorated %}
+                                {% endif %}
+                                {% endif %}
+                            {% endfor %}
+
+                            <div class="title"><span>{{ pub.title }}.</span> {% if pub.award %} (<span class="pub-award"><i class="fa fa-trophy" aria-hidden="true"></i> {{ pub.award }}</span>) {% endif %} {{ authorList }}. {{ pub.year }}.</div> 
+                            <div class="links">
+                                <a href="{{ pub.link }}">[PDF]</a>
+                                <a href="{{ pub.link_publisher }}">[{{ pub.publisher }}]</a>
+
+                                {% if pub.media %}
+                                {% for mediaItem in pub.media %}
+                                    <a href="{{ mediaItem[1] }}">[{{ mediaItem[0] }}]</a>
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% endfor %}
+                    </table>
+                </div>
                 <p class="col-text" style="font-style: italic; margin-top: 35px;">Last Updated: April 2022</p>
             </div>
         </div>
