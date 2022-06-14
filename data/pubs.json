@@ -1,0 +1,9 @@
+---
+layout: none
+---
+[{% for pub in site.data.pubs_fake %}
+  {
+    "area": "{{ pub.area }}",
+    "year": "{{ pub.year }}"
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}]

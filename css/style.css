@@ -196,3 +196,16 @@ ul.publication-list li:last-child { margin-bottom: 0; }
 	font-size: 18pt;
 	margin-bottom: 10px;
 }
+
+.student-table {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.student-table th, .student-table td {
+	padding-right: 18px;
+}
+
+.student-table th {
+	font-weight: 600;
+}

@@ -1,0 +1,10 @@
+---
+layout: none
+---
+[{% for pub in site.data.pubs_fake %}
+  {
+    "frequency": {{ pub.frequency }},
+    "year": "{{ pub.year }}",
+    "area": "{{ pub.area }}"
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}]

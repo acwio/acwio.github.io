@@ -4,9 +4,9 @@
   <script type="text/javascript" src="js/zxh2shw.js"></script>
   <style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}.tk-ff-scala-sans-web-sc{font-family:"ff-scala-sans-web-sc",sans-serif;}</style><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web-sc;src:url(https://use.typekit.net/af/047b33/0000000000000000000169a5/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/047b33/0000000000000000000169a5/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/047b33/0000000000000000000169a5/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="js/jquery.min.js"></script>
-  <link rel="icon" 
+  <!-- <link rel="icon" 
     type="image/vnd.microsoft.icon"
-      href="img/favicon-utk.ico">
+      href="img/favicon-utk.ico"> -->
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/css">
@@ -23,6 +23,9 @@
 
     gtag('config', 'UA-41578067-3');
     </script>
+    <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
 </head>
 
 <body id="page-top">
@@ -47,6 +50,9 @@
                 <li class="nav-item">
                     <a onclick='showTab("teaching")'>teaching</a>
                 </li>
+                <li class="nav-item">
+                    <a onclick='showTab("students")'>students</a>
+                </li>
                 <h6><span class="lnr"></span></h6>
                 <li>   
                     <a href="https://scholar.google.com/citations?user=WyOLLiwAAAAJ&hl=en">scholar</a>
@@ -67,7 +73,7 @@
                 <div class="col-body">
                    <p class="col-text">I am a computer scientist that conducts interactive systems research at the intersection of human-computer interaction (HCI), computer-supported cooperative work (CSCW), and artificial intelligence (AI). My research focuses specifically understanding the role that interactive systems play in guiding human attention in every-day work and life.</p>
                        
-                    <p class="col-text">I am currently an Applied Scientist at <a href="https://www.amazon.science/">Amazon Science</a>. I was previously a professor and co-founded the <a href="https://pairs.eecs.utk.edu">People, Agents, Interactions, and Systems</a> research group at the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a>, and before that, I was a postdoctoral researcher in the the University of California, Irvine's <a href="https://www.informatics.uci.edu/">Informatics Department</a>. I earned my PhD from the University of Waterloo where I was advised by Edith Law and Edward Lank.
+                    <p class="col-text">I am currently an Applied Scientist at <a href="https://www.amazon.science/">Amazon Science</a>. I was previously a professor and co-founder of the <a href="https://pairs.eecs.utk.edu">People, Agents, Interactions, and Systems</a> research group at the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a>. Before that, I was a postdoctoral researcher in the the University of California, Irvine's <a href="https://www.informatics.uci.edu/">Informatics Department</a>. I earned my PhD from the University of Waterloo where I was advised by Edith Law and Edward Lank.
                     </p>
 
                     <p class="col-text">You can reach me at: acwio [at] amazon [dot] com.</p>
@@ -90,7 +96,7 @@
 
                 <!-- <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
 
-                <p class="col-text">Visualization here.</p> -->
+                <div id="chart"></div> -->
                 
                 <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
 
@@ -642,6 +648,50 @@
             </div>
         </div>
     </div>
+    <div class="tab-pane" id="students">
+        <div id="right">
+        </div>
+        <div id="middle">
+            <div class="col-body">
+                <p class="col-text">Throughout my career, I've had the opportunity to mentor, collaborate with, and learn from a collective of exceptional people. I frequently work with graduate students across academic and industry research through several pathways at Amazon, including the <a href="https://www.amazon.science/tag/internships">Applied Science internship program</a>, the <a href="https://www.amazon.science/postdoctoral-science-program">Postdoctoral Science program</a>, and the <a href="https://amazon.jobs/en/teams/internships-for-students">Software Engineering internship program</a>. </p>
+
+                <table class="student-table">
+                    <tr><th>Intern</th><th>Type</th><th>School</th><th>Year</th><th>Collaborators</th><th>Current Affiliation</th></tr>
+                    <tr><td><a href="https://scholar.google.com/citations?user=qEQUsEoAAAAJ&hl=en&oi=ao">Amy Rechkemmer</a></td><td>Applied Scientist</td><td>Purdue University</td><td>2022</td><td></td><td></td></tr>
+                    <tr><td><a href="https://www.kenking.dev/">Ken King</a></td><td>Software Engineer</td><td>Virginia Tech</td><td>2022</td><td>Buck, Kalyanaraman</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/langyinan/">Yinan Lang</a></td><td>Software Engineer</td><td>Steven's Institute of Technology</td><td>2022</td><td>Buck, Kalyanaraman</td><td></td></tr>
+                </table>
+
+                <table class="student-table">
+                    <tr><th>Postdoc</th><th>Host</th><th>Years</th><th>Collaborators</th><th>Current Affiliation</th></tr>
+                    <tr><td><a href="https://infovisu.com/">Rhema Linder</a></td><td>University of Tennessee, Knoxville</td><td>2020-2022</td><td><a href="https://austinhenley.com/">Henley</a></td><td></td></tr>
+                </table>
+
+                <table class="student-table">
+                    <tr><th>Advisee</th><th>Type</th><th>School</th><th>Year</th><th>Collaborators</th><th>Current Affiliation</th></tr>
+                    <tr><td><a href="http://web.eecs.utk.edu/~sdutta6/">Senjuti Dutta</a></td><td>PhD</td><td>University of Tennessee, Knoxville</td><td>2024</td><td>Ruoti, Kuzminkyh</td><td></td></tr>
+                    <tr><td><a href="https://jmclemo6.github.io/">Jacob McLemore</a></td><td>Masters</td><td>University of Tennessee, Knoxville</td><td>2023</td><td>Henley, Bernholdt</td><td></td></tr>
+                    <tr><td><a href="https://sambaumann.com/resume/">Samuel Baumann</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2023</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/priyapatel0502">Abram Bradley</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2023</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/priyapatel0502">Priya Patel</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2023</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/jacob-samar-048456198">Jacob Samar</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2022</td><td>Mark, Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/josh-mandzak-8511561b6">Joshua Mandzak</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2022</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/racheal-dylewski-812463171">Racheal Dylewski</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2022</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/selenaxue">Selena Xue</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2022</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/vishalaiely">Vishal Aiely</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2022</td><td>Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/douglowetn?trk=public_profile_browsemap_profile-result-card_result-card_full-click">Doug Lowe</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2022</td><td>Linder, Kuzminkyh</td><td>Jacobs</td></tr>
+                    <tr><td><a href="https://gregory.croisdale.us/">Gregory Croisdale</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2021</td><td>Wallin, Brusuelas</td><td>PhD Student @ UMich</td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/timothy-player-33089bb6">Timothy Player</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2021</td><td>Wallin, Brusuelas</td><td>Amazon</td></tr>
+                    <tr><td><a href="#">Ethan Haworth</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2021</td><td>Grover</td><td></td></tr>
+                    <tr><td><a href="#">Chase Hunter</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2021</td><td>Mark, Linder</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/jimmy-neville-9aaa14153">Jimmy Neville</a></td><td>Undergraduate</td><td>University of Tennessee, Knoxville</td><td>2021</td><td>Mark</td><td>raft</td></tr>   
+                    <tr><td><a href="https://yuwen.io/">Yuwen Lu</a></td><td>Undergraduate</td><td>University of California, Irvine</td><td>2020</td><td>Mark</td><td>PhD Student @ Notre Dame</td></tr>    
+                    <tr><td><a href="https://www.zongyaowang.com/">Zongyao Wang</a></td><td>Undergraduate</td><td>University of California, Irvine</td><td>2020</td><td>Mark</td><td>MS Student @ UMich</td></tr>    
+                    <tr><td><a href="https://www.jarvistse.com/">Jarvis Xie</a></td><td>Undergraduate</td><td>University of Waterloo</td><td>2020</td><td>Law</td><td>MS Student @ UWaterloo</td></tr>           
+                </table>
+            </div>
+        </div>
+    </div>
     <div class="tab-pane" id="teaching">
         <div id="right">
         </div>
@@ -674,6 +724,213 @@
 </div>
 
 <script src="js/web.js"></script>
+
+<!-- <style>
+
+    /* Bar Chart */
+    .bar {
+      fill: steelblue;
+    }
+    
+    .bar:hover {
+      fill: brown;
+    }
+    
+    .axis {
+      font: 10px sans-serif;
+    }
+    
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    
+    .x.axis path {
+      display: none;
+    }
+    
+    </style>
+    
+    <script>
+
+    // Copyright 2021 Observable, Inc.
+    // Released under the ISC license.
+    // https://observablehq.com/@d3/stacked-bar-chart
+    function StackedBarChart(data, {
+        x = (d, i) => i, // given d in data, returns the (ordinal) x-value
+        y = d => d, // given d in data, returns the (quantitative) y-value
+        z = () => 1, // given d in data, returns the (categorical) z-value
+        title, // given d in data, returns the title text
+        marginTop = 30, // top margin, in pixels
+        marginRight = 0, // right margin, in pixels
+        marginBottom = 30, // bottom margin, in pixels
+        marginLeft = 40, // left margin, in pixels
+        width = 640, // outer width, in pixels
+        height = 400, // outer height, in pixels
+        xDomain, // array of x-values
+        xRange = [marginLeft, width - marginRight], // [left, right]
+        xPadding = 0.1, // amount of x-range to reserve to separate bars
+        yType = d3.scaleLinear, // type of y-scale
+        yDomain, // [ymin, ymax]
+        yRange = [height - marginBottom, marginTop], // [bottom, top]
+        zDomain, // array of z-values
+        offset = d3.stackOffsetDiverging, // stack offset method
+        order = d3.stackOrderNone, // stack order method
+        yFormat, // a format specifier string for the y-axis
+        yLabel, // a label for the y-axis
+        colors = d3.schemeTableau10, // array of colors
+        } = {}) {
+
+        // Compute values.
+        const X = d3.map(data, x);
+        const Y = d3.map(data, y);
+        const Z = d3.map(data, z);
+
+        // Compute default x- and z-domains, and unique them.
+        if (xDomain === undefined) xDomain = X;
+        if (zDomain === undefined) zDomain = Z;
+        xDomain = new d3.InternSet(xDomain);
+        zDomain = new d3.InternSet(zDomain);
+
+        // Omit any data not present in the x- and z-domains.
+        const I = d3.range(X.length).filter(i => xDomain.has(X[i]) && zDomain.has(Z[i]));
+
+        console.log("XDomain:");
+        console.log(xDomain);
+
+        console.log("ZDomain:");
+        console.log(zDomain);
+
+
+        console.log("I:");
+        console.log(I);
+
+        console.log("Y:");
+        console.log(Y);
+
+        // Compute a nested array of series where each series is [[y1, y2], [y1, y2],
+        // [y1, y2], …] representing the y-extent of each stacked rect. In addition,
+        // each tuple has an i (index) property so that we can refer back to the
+        // original data point (data[i]). This code assumes that there is only one
+        // data point for a given unique x- and z-value.
+        const series = d3.stack()
+            .keys(zDomain)
+            .value(([x, I], z) => Y[I.get(z)])
+            .order(order)
+            .offset(offset)
+           (d3.rollup(I, ([i]) => i, i => X[i], i => Z[i]));
+        //debugger; 
+        //.map(s => s.map(d => Object.assign(d, {i: d.data[1].get(s.key)})));
+
+        console.log("Series:");
+        console.log(series);
+
+        // Compute the default y-domain. Note: diverging stacks can be negative.
+        if (yDomain === undefined) yDomain = d3.extent(series.flat(2));
+
+        // Construct scales, axes, and formats.
+        const xScale = d3.scaleBand(xDomain, xRange).paddingInner(xPadding);
+        const yScale = yType(yDomain, yRange);
+        const color = d3.scaleOrdinal(zDomain, colors);
+        const xAxis = d3.axisBottom(xScale).tickSizeOuter(0);
+        const yAxis = d3.axisLeft(yScale).ticks(height / 60, yFormat);
+
+        // Compute titles.
+        if (title === undefined) {
+            const formatValue = yScale.tickFormat(100, yFormat);
+            title = i => `${X[i]}\n${Z[i]}\n${formatValue(Y[i])}`;
+        } else {
+            const O = d3.map(data, d => d);
+            const T = title;
+            title = i => T(O[i], i, data);
+        }
+
+        const svg = d3.select("#chart").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("viewBox", [0, 0, width, height])
+            .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+        
+        console.log('blep1');
+
+        svg.append("g")
+            .attr("transform", `translate(${marginLeft},0)`)
+            .call(yAxis)
+            .call(g => g.select(".domain").remove())
+            .call(g => g.selectAll(".tick line").clone()
+                .attr("x2", width - marginLeft - marginRight)
+                .attr("stroke-opacity", 0.1))
+            .call(g => g.append("text")
+                .attr("x", -marginLeft)
+                .attr("y", 10)
+                .attr("fill", "currentColor")
+                .attr("text-anchor", "start")
+                .text(yLabel));
+        
+                console.log('blep2');
+
+        const bar = svg.append("g")
+            .selectAll("g")
+            .data(series)
+            .join("g")
+            .attr("fill", ([{i}]) => color(Z[i]))
+            .selectAll("rect")
+            .data(d => d)
+            .join("rect")
+            .attr("x", ({i}) => xScale(X[i]))
+            .attr("y", ([y1, y2]) => Math.min(yScale(y1), yScale(y2)))
+            .attr("height", ([y1, y2]) => Math.abs(yScale(y1) - yScale(y2)))
+            .attr("width", xScale.bandwidth());
+
+            console.log('blep3');
+
+        if (title) bar.append("title")
+            .text(({i}) => title(i));
+
+        svg.append("g")
+            .attr("transform", `translate(0,${yScale(0)})`)
+            .call(xAxis);
+
+            console.log('blep4');    
+        return Object.assign(svg.node(), {scales: {color}});
+    }
+
+    d3.json("/data/pubs_fake.json").then(function(data) {
+            console.log('Data');
+            console.log(data);
+
+            // let total = {};
+            // for(var i=0; i < data.length; i++){
+            //     if( !(data[i]['year']) in total ){
+            //         total[data[i]['year']] = 0;
+            //     }
+            //     total[data[i]['year']] += 1;
+            // }
+
+        
+        const areas = ["HCI", "AI"];
+
+        chart = StackedBarChart(data, {
+            x: d => d.year,
+            y: d => d.frequency,
+            z: d => d.area,
+            xDomain: d3.groupSort(data, D => d3.sum(D, d => -d.frequency), d => d.year),
+            yLabel: "↑ Population (millions)",
+            zDomain: areas,
+            colors: d3.schemeSpectral[areas.length],
+            width: 700,
+            height: 200
+        });
+    });
+    
+    function type(d) {
+      d.frequency = +d.frequency;
+      return d;
+    }
+    </script> -->
+    
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>

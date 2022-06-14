@@ -6,6 +6,7 @@
   year: "2022"
   link: "#"
   link_publisher: "#"
+  area: "AI"
 
 - title: "Mobilizing Crowdwork: A Systematic Assessment of the Mobile Usability of HITs"
   publisher: "ACM Digital Library"
@@ -14,6 +15,7 @@
   year: "2022"
   link: "https://acwio.github.io/pubs/chi2022-mobile-hit-usability.pdf"
   link_publisher: "#"
+  area: "HCI"
 
 - title: "“I Didn’t Know I Looked Angry”: Characterizing Observed Emotion and Reported Affect at Work"
   publisher: "ACM Digital Library"
@@ -22,6 +24,7 @@
   year: "2022"
   link: "http://www-personal.umich.edu/~harmank/Papers/CHI2022_Emotion_Recognition.pdf"
   link_publisher: "#"
+  area: "AI+HCI"
 
 
 
@@ -32,6 +35,7 @@
   venue: "IEEE eScience"
   year: "2021"
   link: "https://acwio.github.io/pubs/escience2021-AncientLivesModels.pdf"
+  area: "AI"
 
 - title: "Classifying Reasonability in Retellings of Personal Events Shared on Social Media: A Preliminary Case Study with /r/AmITheAsshole"
   publisher: "AAAI Digital Library"
@@ -39,6 +43,7 @@
   venue: "AAAI ICWSM"
   year: "2021"
   link: "https://acwio.github.io/pubs/icwsm2021-AITA.pdf"
+  area: "AI"
 
 - title: "Firefox Voice: An Open and Extensible Voice Assistant Built Upon the Web"
   publisher: "ACM Digital Library"
@@ -47,6 +52,7 @@
   year: "2021"
   link: "https://juliacambre.com/CHI_2021__Firefox_Voice.pdf"
   link_publisher: "https://juliacambre.com/CHI_2021__Firefox_Voice.pdf"
+  area: "AI+HCI"
 
 - title: "Characterizing Work-Life for Information Work on Mars: A Design Fiction for the New Future of Work on Earth"
   publisher: "ACM Digital Library"
@@ -55,6 +61,7 @@
   year: "2021"
   link: "https://acwio.github.io/pubs/group2021-work-life-mars.pdf"
   link_publisher: "https://dl.acm.org/doi/abs/10.1145/3492859"
+  area: "HCI"
 
 
 # 2020
@@ -65,6 +72,7 @@
   year: "2020"
   link: "https://acwio.github.io/pubs/cui2020-ffvoice.pdf"
   link_publisher: "https://dl.acm.org/doi/10.1145/3405755.3406154?cid=81100005698"
+  area: "AI+HCI"
 
 - title: "Managing Tasks Across the Work-Life Boundary: Opportunities, Challenges, and Directions. "
   publisher: "Microsoft"
@@ -74,6 +82,7 @@
   link: "https://acwio.github.io/pubs/nfw2020-task-management-boundaries.pdf"
   link_publisher: "https://www.microsoft.com/en-us/research/event/new-future-of-work/"
   media: {"Video": "https://www.youtube.com/watch?v=3hteN16Hy-0"}
+  area: "HCI"
 
 - title: "Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work"
   publisher: "ACM Digital Library"
@@ -82,6 +91,7 @@
   year: "2020"
   link: "https://acwio.github.io/pubs/chi2020-productivity-models.pdf"
   link_publisher: "https://dl.acm.org/doi/abs/10.1145/3313831.3376817"
+  area: "AI+HCI"
 
 # 2019
 
@@ -93,6 +103,7 @@
   link_publisher: "https://doi.org/10.1145/3332165.3347932"
   venue: "ACM UIST"
   media: {"Video": "https://www.youtube.com/watch?v=Urh-TQk4ebQ"}
+  area: "AI+HCI"
 
 - title: "The Perpetual Work Life of Crowdworkers: How Tooling Practices Increase Fragmentation in Crowdwork"
   publisher: "ACM Digital Library"
@@ -102,6 +113,7 @@
   link_publisher: "https://doi.org/10.1145/3359126"
   venue: "ACM CSCW"
   media: {}
+  area: "HCI"
 
   # 2018
 - title: "Creating Better Action Plans for Writing Tasks via Vocabulary-Based Planning."
@@ -112,6 +124,7 @@
   link_publisher: "https://dl.acm.org/doi/10.1145/3274355"
   venue: "ACM CSCW"
   media: {}
+  area: "HCI"
 
 - title: "Supporting Workplace Detachment and Reattachment with Conversational Intelligence"
   publisher: "ACM Digital Library"
@@ -121,6 +134,7 @@
   link_publisher: "https://dl.acm.org/doi/abs/10.1145/3173574.3173662"
   venue: "ACM CHI"
   media: {}
+  area: "AI+HCI"
 
   # 2017
 
@@ -132,6 +146,7 @@
   link_publisher: "https://aaai.org/ocs/index.php/HCOMP/HCOMP17/paper/view/15929/15277"
   venue: "AAAI HCOMP"
   media: {}
+  area: "AI+HCI"
 
 - title: "Seeing Sound: Investigating the Effects of Visualizations and Complexity on Crowdsourced Audio Annotations"
   publisher: "ACM Digital Library"
@@ -141,6 +156,7 @@
   venue: "ACM CSCW"
   year: "2017"
   media: {}
+  area: "HCI"
 
 
 # 2016
@@ -153,6 +169,7 @@
   venue: "ACM CSCW"
   year: "2016"
   media: {}
+  area: "HCI"
 
 # 2015
 - title: "Proteus: A Platform for Born Digital Critical Editions of Literary and Subliterary Papyri"
@@ -164,6 +181,7 @@
   primary_area: "Digital Humanities"
   year: "2015"
   media: {}
+  area: "HCI/Humanities"
 
 # 2014
 - title: "Identification of Ancient Greek Papyrus Fragments Using Genetic Sequence Alignment Algorithms"
@@ -175,6 +193,7 @@
   primary_area: "Digital Humanities"
   year: "2014"
   media: {}
+  area: "HCI/Humanities"
 
 - title: "A Computational Pipeline for Crowdsourced Transcriptions of Ancient Greek Papyrus Fragments"
   publisher: "IEEE Digital Library"
@@ -185,6 +204,7 @@
   primary_area: "Digital Humanities"
   year: "2014"
   media: {}
+  area: "HCI/Humanities"
 
 - title: "Improving retrieval efficacy in homology search using the false discovery rate"
   publisher: "IEEE Digital Library"
@@ -193,9 +213,9 @@
   author: "Hyrum D. Carroll, Alex C. Williams, Anthony G. Davis, and John L. Spouge"
   venue: "ACM/IEEE TCBB"
   venue_full: "ACM/IEEE Transactions on Computational Biology and Bioinformatics"
-  primary_area: "Bioinformatics"
   year: "2014"
   media: {}
+  area: "Bioinformatics"
 
   # 2013
 
@@ -206,7 +226,7 @@
   author: "Hyrum D. Carroll, Alex C. Williams, Anthony G. Davis, and John L. Spouge"
   venue: "BSB"
   venue_full: "Brazilian Symposium on Bioinformatics"
-  primary_area: "Bioinformatics"
+  area: "Bioinformatics"
   year: "2013"
   media: {}
 
@@ -218,6 +238,6 @@
   author: "Alex C. Williams, Austin Hitt, Sophie Voisin, and Georgia Tourassi"
   venue: "SPIE Medical Imaging"
   venue_full: "SPIE Medical Imaging: Computer-Aided Diagnosis 2013"
-  primary_area: "Computer-Aided Diagnosis"
+  area: "AI+Health"
   year: "2013"
   media: {}
