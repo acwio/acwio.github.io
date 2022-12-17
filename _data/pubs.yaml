@@ -1,4 +1,23 @@
 # 2022
+- title: "Managing Tasks Across the Work-Life Boundary: Opportunities, Challenges, and
+Directions"
+  publisher: "ACM Digital Library"
+  author: "Alex C. Williams, Shamsi T. Iqbal, Julia Kiseleva, Ryen W. White"
+  venue: "TOCHI"
+  year: "2022"
+  link: "#"
+  link_publisher: "#"
+  area: "HCI"
+
+- title: "Motivated to Work or Working to Stay Motivated: A Diary and Interview Study on Working From Home"
+  publisher: "ACM Digital Library"
+  author: "Judith Willemijn Borghouts, Gloria Mark, Alex C. Williams, Thomas Breideband"
+  venue: "ACM CSCW"
+  year: "2022"
+  link: "https://dl.acm.org/doi/pdf/10.1145/3555121"
+  link_publisher: "#"
+  area: "HCI"
+
 - title: "Dataset Augmentation in Papyrology with Generative Models: A Study of Synthetic Ancient Greek Character Images"
   publisher: "IJCAI Proceedings"
   author: "Matthew I. Swindall, Timothy Player, Ben Keener, Alex C. Williams, James H. Brusuelas, Federica Nicolardi, Marzia D'Angelo, Claudio Vergara, Michael McOsker, and John F. Wallin"
@@ -14,7 +33,7 @@
   venue: "ACM CHI"
   year: "2022"
   link: "https://acwio.github.io/pubs/chi2022-mobile-hit-usability.pdf"
-  link_publisher: "#"
+  link_publisher: "https://dl.acm.org/doi/10.1145/3491102.3501876"
   area: "HCI"
 
 - title: "“I Didn’t Know I Looked Angry”: Characterizing Observed Emotion and Reported Affect at Work"
@@ -23,7 +42,7 @@
   venue: "ACM CHI"
   year: "2022"
   link: "http://www-personal.umich.edu/~harmank/Papers/CHI2022_Emotion_Recognition.pdf"
-  link_publisher: "#"
+  link_publisher: "https://dl.acm.org/doi/abs/10.1145/3491102.3517453"
   area: "AI+HCI"
 
 

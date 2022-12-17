@@ -157,9 +157,9 @@ a.teach-link:hover {text-decoration: none; color: #a2a19f;}
     list-style: circle !important;
 }
 
-#home-img {
+/* #home-img {
     border: 1px solid black;
-}
+} */
 
 .publication-list {
     font-size: 80%;
