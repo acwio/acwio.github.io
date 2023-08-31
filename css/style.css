@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -26,9 +25,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
@@ -42,23 +41,24 @@ table {
 	border-spacing: 0;
 }
 img {
-	max-width: 100%;
+	max-width: 195px;
+	border: 1px solid black;
+
 }
 #header{
 	width:100%;
 	margin: auto;
 	padding-bottom: 40px;
-    	padding-top: 90px;
-    	padding-left: 15px;
-	font-size: 28px;
+    padding-left: 15px;
+	font-size: 22px;
 	font-family: 'Rubik', sans-serif;
 }
 #container{
        	width:1100px;
        	margin: auto;
    	height:600px;
-   	line-height: 16pt;
-   	font-family: "ff-scala-sans-web",sans-serif;
+   	line-height: 10pt;
+	font-family: 'Amazon Ember V2', sans-serif;
 }
 #left{
 	width:12%;
@@ -67,14 +67,15 @@ img {
 	padding-right:30px;
 	line-height: 150%;
 	overflow:hidden;
+	font-size: 10pt;
 }
 #right{
 	float:right;
-	width:30%;
+	width:35%;
 	margin:auto 2% auto auto;
 	padding-left:60px;
 	line-height: 135%;
-	overflow:hidden
+	font-size: 10pt;
 }
 #middle{
 	position:relative;
@@ -83,16 +84,18 @@ img {
 	right:0;
 	line-height: 150%;
 	margin:auto;
-	overflow:hidden
+	overflow:hidden;
+	font-size: 10pt;
 }
 
-#middle-pubs {
+#middle-home, #middle-pubs, #middle-internships {
 	width: 700px;
 	position:relative;
 	left:10;
 	right:0;
-	line-height: 150%;;
-	overflow:hidden
+	line-height: 140%;
+	overflow:hidden;
+	font-size: 10pt;
 }
 
 #footer{
@@ -138,6 +141,7 @@ a:hover {color:#b16604;}
 .col-text {
 	text-align: justify;
 	padding-bottom: 18px;
+	font-size: 10pt;
 }
 .paper-venue {
 	font-style: italic;
@@ -164,7 +168,7 @@ a.teach-link:hover {text-decoration: none; color: #a2a19f;}
 .publication-list {
     font-size: 80%;
 }
-.publication-list .title span { font-weight: bold; font-style: italic;}
+.publication-list .title span { font-weight: bold; }
 .publication-list .lab-member {
         color: #444;
         text-decoration: underline;
@@ -174,7 +178,7 @@ table.publication-list {
     border-collapse: separate;
     border-spacing: 0 16px;
 }
-table.publication-list h2 { margin-top: 16px; font-size: 18pt; }
+table.publication-list h2 { font-size: 14pt; }
 table.publication-list th, td { padding-right: 16px; }
 table.publication-list td.venue div { text-align: right; }
 
@@ -193,7 +197,7 @@ ul.publication-list li {
 ul.publication-list li:last-child { margin-bottom: 0; }
 
 .col-body h3 {
-	font-size: 18pt;
+	font-size: 14pt;
 	margin-bottom: 10px;
 }
 
@@ -208,4 +212,8 @@ ul.publication-list li:last-child { margin-bottom: 0; }
 
 .student-table th {
 	font-weight: 600;
+}
+
+.person-name {
+	font-size: 10.5pt;
 }

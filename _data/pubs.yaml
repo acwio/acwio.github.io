@@ -1,14 +1,23 @@
-# 2022
+- title: "Characterizing Time Spent in Video Object Tracking Annotation Tasks: A Study of Task Complexity in Vehicle Tracking"
+  publisher: "AAAI Digital Library"
+  author: "Amy Rechkemmer, Alex C. Williams, Matthew Lease, Li Erran Li"
+  venue: "AAAI HCOMP"
+  year: "2023"
+  link: "https://acwio.github.io/pubs/hcomp2023-vot-time.pdf"
+  link_publisher: "#"
+  area: "HCI+AI"
+
 - title: "Managing Tasks Across the Work-Life Boundary: Opportunities, Challenges, and
 Directions"
   publisher: "ACM Digital Library"
   author: "Alex C. Williams, Shamsi T. Iqbal, Julia Kiseleva, Ryen W. White"
-  venue: "TOCHI"
+  venue: "ACM TOCHI"
   year: "2023"
   link: "https://acwio.github.io/pubs/tochi2023-work-life-task-mgmt.pdf"
   link_publisher: "https://dl.acm.org/doi/10.1145/3582429"
   area: "HCI"
 
+# 2022
 - title: "Motivated to Work or Working to Stay Motivated: A Diary and Interview Study on Working From Home"
   publisher: "ACM Digital Library"
   author: "Judith Willemijn Borghouts, Gloria Mark, Alex C. Williams, Thomas Breideband"

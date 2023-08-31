@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/icon-font.min.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+
   <title>Alex Williams | HCI Researcher</title>
             <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41578067-3"></script>
@@ -32,26 +34,28 @@
 
 <div id="container">
     <div id="header">
-        ALEX WILLIAMS : HCI+AI
+       
     </div>
     <div id="left">
-        <div class="col-body">
-            <img id="home-img" src="img/alex_profile.jpg">
-        </div>
-        <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
+        
+        <!-- <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6> -->
         <nav class="main-nav mobile-nav">
             <ul class="nav nav-pills nav-fill nav-links nav-tabs">
                 <li class="nav-item active">
-                    <a onclick='showTab("home")'>home</a>
+                    <a onclick='showTab("home")'>bio</a>
                 </li>
                 <li>
-                    <a onclick='showTab("research")'>research</a>
+                    <a onclick='showTab("research")'>publications</a>
                 </li>
                 <li class="nav-item">
-                    <a onclick='showTab("teaching")'>teaching</a>
+                    <a onclick='showTab("students")'>mentees</a>
                 </li>
+                <!-- <li class="nav-item">
+                    <a onclick='showTab("internships")'>prospectives</a>
+                </li> -->
+                <h6><span class="lnr"></span></h6>
                 <li class="nav-item">
-                    <a onclick='showTab("students")'>students</a>
+                    <a onclick='showTab("teaching")'>archive</a>
                 </li>
                 <h6><span class="lnr"></span></h6>
                 <li>   
@@ -63,20 +67,28 @@
 	<div id="main-content">
         <div class="tab-pane" id="home">
             <div id="right">
-                <div class='jekyll-twitter-plugin' align="center">
-                     <a class="twitter-timeline" href="https://twitter.com/acwio?ref_src=twsrc%5Etfw&height=375">Tweets by acwio</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="col-body">
+                    <p class="col-text">
+                        <img id="home-img" src="img/alex_profile.jpg">
+                        <div>
+                            <span class="person-name">Alex C. Williams, PhD</span> <br/>
+                            <span class="person-title">Applied Scientist, AWS AI</span> <br/>
+                            <span class="person-email">acwio [at] amazon.com</span>
+                        </div>
+                    </p>
                 </div>
                 
             </div>
             <div id="middle">
                 <div class="col-body">
-                   <p class="col-text">I am a computer scientist that conducts interactive systems research at the intersection of human-computer interaction (HCI), computer-supported cooperative work (CSCW), and artificial intelligence (AI). My research focuses specifically understanding the role that interactive systems play in guiding human attention in every-day work and life.</p>
-                       
-                    <p class="col-text">I am currently an Applied Scientist at <a href="https://www.amazon.science/">Amazon Science</a>. I was previously a professor and co-founder of the <a href="https://pairs.eecs.utk.edu">People, Agents, Interactions, and Systems</a> research group at the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a>. Before that, I was a postdoctoral researcher in the the University of California, Irvine's <a href="https://www.informatics.uci.edu/">Informatics Department</a>. I earned my PhD from the University of Waterloo where I was advised by Edith Law and Edward Lank.
+                   <h3>Bio</h3>
+                   <p class="col-text">
+                        I'm an applied scientist in the Human-in-the-Loop Science team at <a href="https://aws.amazon.com/machine-learning/">AWS AI</a> where I design, engineer, and study facets of interactive machine intelligence. Before joining AWS, I was a professor in the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a>'s EECS Department and a postdoctoral researcher in the the University of California, Irvine's <a href="https://www.informatics.uci.edu/">Informatics Department</a>. During my PhD, I spent several summers with the <a href="https://www.microsoft.com/en-us/research/group/productivity/">Next-Generation Productivity group</a> at Microsoft Research and the <a href="https://wiki.mozilla.org/Emerging_Technologies">Emerging Technologies team</a> at Mozilla Research.
                     </p>
 
-                    <p class="col-text">You can reach me at: acwio [at] amazon [dot] com.</p>
+                    <p class="col-text">
+                        I earned my PhD in Computer Science from the <a href="https://uwaterloo.ca/">University of Waterloo</a> and hold Master's and Bachelor's degrees in Computer Science from <a href="https://www.mtsu.edu/">Middle Tennessee State University</a>.
+                    </p>
 
                     <span class="lnr" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span>
                 </div>
@@ -88,14 +100,14 @@
         </div>
         <div id="middle-pubs">
             <div class="col-body">
-                <h3>Research Overview</h3>
-                <p class="col-text"> My research focuses on designing novel intelligent and interactive systems and understanding how they affect or support human attention. My work is regularly published at premier publication venues for HCI research (e.g., CHI, CSCW, UIST) alongside other venues that welcome interdisciplinary contributions (e.g., applications of computing to the humanities).</p>
+                <h3>Publications</h3>
+                <p class="col-text"> I am broadly intersted in facets of interactive machine intelligence, ranging from data collection for model training to user studies of new systems, tools, or techniques. I publish my research at premier venues aligned to human-computer interaction research (e.g., CHI, CSCW, UIST). On occasion, I also write <a href="https://aws.amazon.com/blogs/machine-learning/snapper-provides-machine-learning-assisted-labeling-for-pixel-perfect-image-object-detection/">blogs</a>.</p>
 
                 <!-- <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
 
                 <div id="chart"></div> -->
                 
-                <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6>
+                <!-- <h6><span class="lnr lnr-mustache" style="color: white; --darkreader-inline-color:#e8e6e3;" data-darkreader-inline-color=""></span></h6> -->
 
                 
                 
@@ -112,7 +124,25 @@
                         
                         
                         <tr>
-                            <td class="venue"><div>TOCHI</div></td>
+                            <td class="venue"><div>AAAI HCOMP</div></td>
+                            <td>
+                            
+                            
+
+                            
+
+                            <div class="title"><span>Characterizing Time Spent in Video Object Tracking Annotation Tasks: A Study of Task Complexity in Vehicle Tracking.</span>  Amy Rechkemmer, Alex C. Williams, Matthew Lease, Li Erran Li. 2023.</div> 
+                            <div class="links">
+                                <a href="https://acwio.github.io/pubs/hcomp2023-vot-time.pdf">[PDF]</a>
+                                <a href="#">[AAAI Digital Library]</a>
+
+                                
+                            </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="venue"><div>ACM TOCHI</div></td>
                             <td>
                             
                             
@@ -686,7 +716,7 @@
                     
                     </table>
                 </div>
-                <p class="col-text" style="font-style: italic; margin-top: 35px;">Last Updated: December 2022</p>
+                <p class="col-text" style="font-style: italic; margin-top: 35px;">Last Updated: August 2023</p>
             </div>
         </div>
     </div>
@@ -695,21 +725,23 @@
         </div>
         <div id="middle">
             <div class="col-body">
-                <p class="col-text">Throughout my career, I've had the opportunity to mentor, collaborate with, and learn from a collective of exceptional people. I frequently work with students at Amazon through the <a href="https://www.amazon.science/tag/internships">Applied Science internship program</a>, the <a href="https://www.amazon.science/postdoctoral-science-program">Postdoctoral Science program</a>, and the <a href="https://amazon.jobs/en/teams/internships-for-students">Software Engineering internship program</a>.</p>
-
-                <table class="student-table">
-                    <tr><th>Intern</th><th>Type</th><th>School</th><th>Year</th><th>Collaborators</th><th>Current Affiliation</th></tr>
-                    <tr><td><a href="https://scholar.google.com/citations?user=qEQUsEoAAAAJ&hl=en&oi=ao">Amy Rechkemmer</a></td><td>Applied Scientist</td><td>Purdue University</td><td>2022</td><td>McKinney</td><td></td></tr>
-                    <tr><td><a href="https://www.kenking.dev/">Ken King</a></td><td>Software Engineer</td><td>Virginia Tech</td><td>2022</td><td>Buck, Kalyanaraman</td><td></td></tr>
-                    <tr><td><a href="https://www.linkedin.com/in/langyinan/">Yinan Lang</a></td><td>Software Engineer</td><td>Steven's Institute of Technology</td><td>2022</td><td>Buck, Kalyanaraman</td><td>SDE @ Amazon</td></tr>
-                    <tr><td><a href="#">Hanyue Shi</a></td><td>Software Engineer</td><td>UW</td><td>2022</td><td>Buck, Kalyanaraman</td><td>SDE @ Amazon</td></tr>
-                    <tr><td><a href="#">Shangchen Du</a></td><td>Software Engineer</td><td>UCSD</td><td>2022</td><td>Bai, Buck</td><td>SDE @ Amazon</td></tr>
-                </table>
+                <h3>Mentees</h3>
+                <p class="col-text">I've had the opportunity to mentor, collaborate with, and learn from a collective of exceptional people over the years.</p>
 
                 <table class="student-table">
                     <tr><th>Postdoc</th><th>Host</th><th>Years</th><th>Collaborators</th><th>Current Affiliation</th></tr>
-                    <tr><td><a href="https://schidamb.github.io/">Subramanian Chidambaram</a></td><td>Amazon</td><td>2022-</td><td></td><td></td></tr>
+                    <tr><td><a href="https://schidamb.github.io/">Subramanian Chidambaram</a></td><td>Amazon</td><td>2022-</td><td>Li</td><td></td></tr>
                     <tr><td><a href="https://infovisu.com/">Rhema Linder</a></td><td>University of Tennessee, Knoxville</td><td>2020-2022</td><td><a href="https://austinhenley.com/">Henley</a></td><td>Lecturer @ UTK</td></tr>
+                </table>
+
+                <table class="student-table">
+                    <tr><th>Intern</th><th>Role</th><th>School</th><th>Year</th><th>Collaborators</th><th>Current Affiliation</th></tr>
+                    <tr><td><a href="http://zhengzhang.me/">Zheng Zhang</a></td><td>Applied Scientist</td><td>Notre Dame</td><td>2022</td><td>Lease, Li, Li</td><td></td></tr>
+                    <tr><td><a href="https://scholar.google.com/citations?user=qEQUsEoAAAAJ&hl=en&oi=ao">Amy Rechkemmer</a></td><td>Applied Scientist</td><td>Purdue University</td><td>2022</td><td>Lease, Li</td><td></td></tr>
+                    <tr><td><a href="https://www.kenking.tech/">Ken King</a></td><td>Software Engineer</td><td>Virginia Tech</td><td>2022</td><td>Buck, Kalyanaraman</td><td></td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/langyinan/">Yinan Lang</a></td><td>Software Engineer</td><td>Steven's Institute of Technology</td><td>2022</td><td>Buck, Kalyanaraman</td><td>SDE @ Amazon</td></tr>
+                    <tr><td><a href="#">Hanyue Shi</a></td><td>Software Engineer</td><td>UW</td><td>2022</td><td>Buck, Kalyanaraman</td><td>SDE @ Amazon</td></tr>
+                    <tr><td><a href="#">Spencer Du</a></td><td>Software Engineer</td><td>UCSD</td><td>2022</td><td>Bai, Buck</td><td>SDE @ Amazon</td></tr>
                 </table>
 
                 <table class="student-table">
@@ -744,25 +776,51 @@
         </div>
         <div id="middle">
             <div class="col-body">
+                <h3>Archive</h3>
+                <p class="col-text">The "archive" contains miscellaneous information from other periods of time (e.g. during my professorship) that may be useful to others.</p>
+
+                <h4>Teaching</h4>
                 <p class="col-text">At the University of Tennessee, I previously taught courses in three key areas of computing: human-computer interaction, artificial intelligence, and machine learning.</p>
 
-                <h6>Fall 2021</h6>
+                <h5>Fall 2021</h5>
                 <ul class="class-list">
                     <li><a href="teaching/f21/cosc423/">CS423/523: Artificial Intelligence</a></li>
                 </ul>  
                 
-                <h6>Spring 2021</h6>
+                <h5>Spring 2021</h5>
                 <ul class="class-list">
                     <li><a href="teaching/s21/cosc494/">CS494/594: Human-AI Interaction</a></li>
                     <li><a href="teaching/s21/cosc493/">CS493/593: Human Computation</a></li>
                 </ul>  
 
-                <h6>Fall 2020</h6>
+                <h5>Fall 2020</h5>
                 <ul class="class-list">
                     <li><a href="teaching/f20/cosc425/">CS425: Introduction to Machine Learning</a></li>
                 </ul> 
                 
                 <p class="col-text" style="font-style: italic; margin-top: 35px;">Last Updated: December 14, 2021</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="internships">
+        <div id="right">
+        </div>
+        <div id="middle-internships">
+            <div class="col-body">
+                <h3>Prospectives</h3>
+                <p class="col-text" style="padding-bottom: 4px">
+                    Each summer, the AWS AI Human-in-the-Loop Science team typically recruits interns to fill two types of roles: Applied Science (AS) Interns and Software Development Engineer (SDE) Interns.
+                    <ol class="class-list">
+                        <li>Applied Scientist Intern</a></li>
+                        <li>Software Development Engineer Interns</a></li>
+                    </ol>
+                    
+                    <ol class="class-list">
+                        <li>Amazon's <a href="https://www.amazon.science/tag/internships">Applied Science internship program</a></li>
+                        <li>Amazon's <a href="https://amazon.jobs/en/teams/internships-for-students">Software Engineering internship program</a></li>
+                        <li>Amazon's <a href="https://www.amazon.science/postdoctoral-science-program">Postdoctoral Science program</a></li>.
+                    </ol>
+                </p>
             </div>
         </div>
     </div>
