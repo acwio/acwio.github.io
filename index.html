@@ -112,7 +112,9 @@ layout: default
                             <div class="title"><span>{{ pub.title }}.</span> {% if pub.award %} (<span class="pub-award"><i class="fa fa-trophy" aria-hidden="true"></i> {{ pub.award }}</span>) {% endif %} {{ authorList }}. {{ pub.year }}.</div> 
                             <div class="links">
                                 <a href="{{ pub.link }}">[PDF]</a>
+                                {% if pub.publisher %}
                                 <a href="{{ pub.link_publisher }}">[{{ pub.publisher }}]</a>
+                                {% endif %}
 
                                 {% if pub.media %}
                                 {% for mediaItem in pub.media %}
@@ -140,7 +142,7 @@ layout: default
 
                 <table class="student-table">
                     <tr><th>Postdoc</th><th>Host</th><th>Years</th><th>Collaborators</th><th>Current Affiliation</th></tr>
-                    <tr><td><a href="https://schidamb.github.io/">Subramanian Chidambaram</a></td><td>Amazon</td><td>2022-</td><td>Li</td><td></td></tr>
+                    <tr><td><a href="https://schidamb.github.io/">Subramanian Chidambaram</a></td><td>Amazon</td><td>2022-2024</td><td>Li</td><td>Applied Scientist @ AWS</td></tr>
                     <tr><td><a href="https://infovisu.com/">Rhema Linder</a></td><td>University of Tennessee, Knoxville</td><td>2020-2022</td><td><a href="https://austinhenley.com/">Henley</a></td><td>Lecturer @ UTK</td></tr>
                 </table>
 
