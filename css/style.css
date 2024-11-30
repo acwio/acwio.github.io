@@ -41,7 +41,7 @@ table {
 	border-spacing: 0;
 }
 img {
-	max-width: 195px;
+	max-width: 255px;
 	border: 1px solid black;
 
 }
@@ -215,5 +215,5 @@ ul.publication-list li:last-child { margin-bottom: 0; }
 }
 
 .person-name {
-	font-size: 10.5pt;
+	font-size: 12.5pt;
 }
