@@ -1,3 +1,11 @@
+- title: "PILOT: Steering Synthetic Data Generation with Psychological & Linguistic Output Targeting"
+  author: "Caitlin Cisar, Emily Sheffield, Joshua Drake, Alden Harrell, Subramanian Chidambaram, Nikita Nangia, Vinayak Arannil, Alex Williams"
+  venue: "arXiv"
+  year: "2025"
+  link: "https://arxiv.org/abs/2509.15447"
+  link_publisher: "#"
+  area: "HCI+AI"
+
 - title: "Socratic Human Feedback (SoHF): Understanding Socratic Feedback Based Steering Strategies Used by Expert Programmers for Code-generation with LLMs"
   author: "Subramanian Chidambaram, Li Erran Li, Min Bai, Xiaopen Li, Kaixiang Lin, Xiong Zhou, Alex C. Williams"
   venue: "EMNLP"
